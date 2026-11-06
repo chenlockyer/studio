@@ -503,6 +503,116 @@ main { position: relative; }
 .thumb-slot .slot-note { color: #4a5257; }
 .slot-title { font-size: var(--step-body); font-weight: 700; }
 .slot-note { font-size: var(--step-small); }
+.case-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+.case-link:hover { color: var(--ink); }
+
+/* ================================================================
+   GROUP CONTROL / the software you buy on its own
+   ================================================================ */
+.gc {
+  padding: var(--section) var(--margin);
+  background: var(--bg);
+}
+.gc-head { max-width: 52ch; }
+
+.gc-points {
+  margin-top: clamp(1.75rem, 3.5vw, 2.75rem);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(1rem, 2.2vw, 2rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--surface-2);
+}
+.gc-points li { display: flex; flex-direction: column; gap: 0.5rem; }
+.gc-points b {
+  font-family: var(--font-display);
+  font-size: var(--step-body);
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.gc-points span {
+  font-size: var(--step-small);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* 切换式查看器：左边四个标签，右边一块画面。不平铺。 */
+.gc-viewer {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.gc-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border-top: 1px solid var(--surface-2);
+}
+.gc-tab {
+  position: relative;
+  min-height: 52px;
+  padding: 0.9rem 0.75rem 0.9rem 1rem;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: var(--step-body);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--muted);
+  background: transparent;
+  border-top: 1px solid var(--surface-2);
+  border-radius: var(--radius);
+  transition: color var(--t-hover) linear, background-color var(--t-hover) linear, transform var(--t-press) var(--ease-out);
+}
+.gc-tab:first-child { border-top: 0; }
+.gc-tab:hover { color: var(--ink); }
+.gc-tab.is-on { color: var(--ink); }
+.gc-tab.is-on::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+}
+.gc-tab.is-press { transform: translateY(1px) scale(0.985); }
+
+.gc-panes {
+  background: var(--surface);
+  padding: clamp(0.75rem, 1.6vw, 1.25rem);
+  display: flex;
+  justify-content: center;
+}
+.gc-pane { display: flex; flex-direction: column; width: 100%; align-items: center; }
+.gc-pane[hidden] { display: none; }
+.gc-pane img {
+  width: auto;
+  max-width: 100%;
+  max-height: min(64vh, 620px);
+  object-fit: contain;
+  object-position: top center;
+}
+.gc-pane p {
+  margin-top: 0.9rem;
+  align-self: stretch;
+  font-size: var(--step-small);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 52ch;
+}
+
+.gc-cta {
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+}
+.gc-note { font-size: var(--step-small); color: var(--muted); max-width: 30ch; }
 
 /* the count of the three, so the visitor knows where they are */
 .scene-dots {
@@ -1033,8 +1143,36 @@ main { position: relative; }
   .hero-title .half-b { text-align: right; }
 
   .reel { grid-column: 4 / 10; }
+
+  .gc-points { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .gc-viewer { grid-template-columns: 1fr; }
+  .gc-tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 0;
+  }
+  .gc-tab {
+    border-top: 0;
+    border-bottom: 1px solid var(--surface-2);
+    padding: 0.7rem 0.9rem;
+  }
+  .gc-tab.is-on::before {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 3px;
+  }
+}
 @media (max-width: 760px) {
   .goals-line { grid-template-columns: 1fr; }
+
+  .gc-points { grid-template-columns: 1fr; gap: 1.1rem; }
+  .gc-viewer { grid-template-columns: 1fr; gap: 1rem; }
+  .gc-tabs { flex-direction: row; flex-wrap: wrap; }
+  .gc-tab { font-size: var(--step-small); min-height: 44px; padding: 0.6rem 0.8rem; }
+  .gc-pane img { max-height: 58vh; }
 
 
   .bar { padding: 0.7rem var(--margin); }

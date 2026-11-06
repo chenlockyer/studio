@@ -22,6 +22,14 @@
     addEventListener('load', () => {
       setTimeout(() => { revealables.forEach(reveal); io.disconnect(); }, 2200);
     });
+    // 兜底：某些环境（无头渲染、分享预览、节能模式下页面判为不可见）IO 永不回调，
+    // 内容会整块留在 opacity:0。document 就绪后无论如何都要让它们出现。
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => { revealables.forEach(reveal); }, 3200);
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) revealables.forEach(reveal);
+    });
   } else {
     revealables.forEach(reveal);
   }
@@ -261,6 +269,39 @@
   });
   if (qs.length) selectQ(0);
 
+  /* ---------- 5b. group-control viewer: four tabs, one pane ---------- */
+  const gTabs = $$('.gc-tab');
+  const gPanes = $$('.gc-pane');
+  const selectG = (i) => {
+    gTabs.forEach((t, k) => {
+      const on = k === i;
+      t.classList.toggle('is-on', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.setAttribute('tabindex', on ? '0' : '-1');
+    });
+    gPanes.forEach((p, k) => {
+      const on = k === i;
+      p.hidden = !on;
+      p.classList.toggle('is-on', on);
+    });
+  };
+  gTabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectG(i));
+    t.addEventListener('focus', () => selectG(i));
+    t.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        const n = (i + 1) % gTabs.length;
+        selectG(n); gTabs[n].focus();
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const n = (i - 1 + gTabs.length) % gTabs.length;
+        selectG(n); gTabs[n].focus();
+      }
+    });
+  });
+  if (gTabs.length) selectG(0);
+
   /* ---------- 6. the ask form: copy the brief, no fake submit ---------- */
   const form = document.getElementById('ask-form');
   const hint = document.getElementById('ask-hint');
@@ -369,6 +410,7 @@
   /* ---------- 8. the evidence numbers count up once ---------- */
   const counters = $$('[data-count]');
   if (counters.length && 'IntersectionObserver' in window && !reduce.matches) {
+    const settle = (el) => { el.textContent = el.dataset.count; };
     const cio = new IntersectionObserver((entries) => {
       for (const e of entries) {
         if (!e.isIntersecting) continue;
@@ -386,7 +428,17 @@
         cio.unobserve(el);
       }
     }, { threshold: 0.4 });
-    counters.forEach((c) => { c.textContent = reduce.matches ? c.dataset.count : '0'; cio.observe(c); });
+    counters.forEach((c) => { c.textContent = '0'; cio.observe(c); });
+    // 兜底：观察器没触发时（无头渲染、分享预览抓图、部分爬虫），数值不能停在 0
+    addEventListener('load', () => {
+      setTimeout(() => counters.forEach(settle), 2400);
+    });
+    // 还有一层：页面被判为不可见时 IO 不回调，同样要落到真实值
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) counters.forEach(settle);
+    });
+  } else {
+    counters.forEach((c) => { c.textContent = c.dataset.count; });
   }
 
   /* ---------- 9. the marquee pauses when it leaves the screen (saves battery) ---------- */

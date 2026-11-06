@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>落地组 · 同一台 G1，换一块场地</title>
-<meta name="description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作定制、多机同步、师资培训。已交付导览 7 台 / 3 个客户，群控 3 套 / 3 个客户。">
+<meta name="description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作定制、多机同步、师资培训。群控软件 1 分钟部署、手机电脑多端、支持官方动作与第三方按键动作、可编辑脚本编排节目。已交付导览 7 台 / 3 个客户，群控 3 套 / 3 个客户。">
 <meta name="theme-color" content="#0b0d0f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="落地组 · 同一台 G1，换一块场地">
@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://chenlockyer.github.io/studio/">
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=20261106c">
 <link rel="preload" href="assets/fonts/noto-sans-sc-700.subset.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/epilogue-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script>document.documentElement.classList.remove('no-js');</script>
@@ -29,6 +29,7 @@
   </a>
   <nav class="nav" aria-label="主导航">
     <a href="#scenes">三种现场</a>
+    <a href="#groupcontrol">群控软件</a>
     <a href="#delivery">怎么交付</a>
     <a href="#plan">要几台</a>
     <a href="#course">培训</a>
@@ -113,7 +114,7 @@
             <p class="card-name" id="p1-name">场馆导览</p>
             <p class="card-line">带路，到一个站点讲一次</p>
             <p class="card-fact">已交付 7 台 · 3 个客户</p>
-            <img class="card-thumb" src="assets/img/thumb-tour-card.jpg" alt="导览方案页：三个站点排在真实地图上的路线，直线合计 24 米" width="720" height="488" loading="lazy">
+            <img class="card-thumb" src="assets/img/tour-ready.jpg" alt="导览软件的准备工作台：地图管理、标注站点、设定人设、制定方案，四项就绪后才能开始接待" width="1500" height="717" loading="lazy">
             <a class="btn btn-card" href="#delivery">看路线怎么排</a>
           </div>
         </article>
@@ -139,11 +140,8 @@
             <p class="card-name" id="p3-name">多机同步</p>
             <p class="card-line">一套命令打下去，动作不散队</p>
             <p class="card-fact">群控 3 套 · 3 个客户</p>
-            <div class="thumb-slot">
-              <span class="slot-title">群控界面</span>
-              <span class="slot-note">截图待补</span>
-            </div>
-            <a class="btn btn-card" href="#contact">问多机怎么布</a>
+            <img class="card-thumb" src="assets/img/gc-main.jpg" alt="G1 集群控制器：左侧机器人列表，中间命令表，右侧同步模式与安全控制" width="1500" height="717" loading="lazy">
+            <a class="btn btn-card" href="#groupcontrol">看群控怎么用</a>
           </div>
         </article>
 
@@ -155,6 +153,55 @@
 
       </div>
     </div>
+  </section>
+
+  <!-- ============ 1b · 群控软件（单独一款产品） ============ -->
+  <section class="gc" id="groupcontrol" aria-labelledby="gc-title">
+    <div class="gc-head">
+      <h2 class="section-title reveal" id="gc-title">群控软件，单独卖</h2>
+      <p class="section-lead reveal">本体你已经有了。软件装上去就能用 —— 手机、电脑都能开，不用为它再买一台工控机。</p>
+    </div>
+
+    <ul class="gc-points reveal">
+      <li><b>1 分钟部署</b><span>装好就是工作台，不配环境。</span></li>
+      <li><b>手机 · 电脑多端</b><span>浏览器直接开，场地里随手调。</span></li>
+      <li><b>官方动作全覆盖</b><span>舞蹈、模式、运控，勾选即下发。</span></li>
+      <li><b>第三方按键动作</b><span>自己攒的动作也能接进来。</span></li>
+      <li><b>脚本编排节目</b><span>排成队列，一次执行一整场。</span></li>
+    </ul>
+
+    <div class="gc-viewer reveal">
+      <ul class="gc-tabs" role="tablist" aria-orientation="vertical" aria-label="群控软件界面">
+        <li><button type="button" class="gc-tab is-on" role="tab" aria-selected="true" aria-controls="gc-p0" id="gc-t0" tabindex="0">主工作台</button></li>
+        <li><button type="button" class="gc-tab" role="tab" aria-selected="false" aria-controls="gc-p1" id="gc-t1" tabindex="-1">手机端</button></li>
+        <li><button type="button" class="gc-tab" role="tab" aria-selected="false" aria-controls="gc-p2" id="gc-t2" tabindex="-1">自定义按键</button></li>
+        <li><button type="button" class="gc-tab" role="tab" aria-selected="false" aria-controls="gc-p3" id="gc-t3" tabindex="-1">队列编排</button></li>
+      </ul>
+
+      <div class="gc-panes">
+        <div class="gc-pane is-on" id="gc-p0" role="tabpanel" aria-labelledby="gc-t0" tabindex="0">
+          <img src="assets/img/gc-main.jpg" alt="群控主界面：机器人列表、命令表、同步模式与舞蹈急停、阻尼保护模式等安全控制" width="1500" height="717" loading="lazy">
+          <p>选中机器人，勾命令，下发。右侧常驻舞蹈急停与阻尼保护，出事一键停。</p>
+        </div>
+        <div class="gc-pane" id="gc-p1" role="tabpanel" aria-labelledby="gc-t1" tabindex="0" hidden>
+          <img src="assets/img/gc-mobile.webp" alt="手机上打开的群控界面，同样是完整的命令列表与舞蹈运控页" width="620" height="1139" loading="lazy">
+          <p>手机端是同一套界面。在场地里端着手机就能改，不用回办公室开电脑。</p>
+        </div>
+        <div class="gc-pane" id="gc-p2" role="tabpanel" aria-labelledby="gc-t2" tabindex="0" hidden>
+          <img src="assets/img/gc-keymap.webp" alt="添加命令弹窗：选择 L1、R1、A、B 等按键、设置持续时间与间隔" width="476" height="750" loading="lazy">
+          <p>自定义按键：任意键序 + 持续时间 + 间隔，攒成自己的动作，再放回列表里用。</p>
+        </div>
+        <div class="gc-pane" id="gc-p3" role="tabpanel" aria-labelledby="gc-t3" tabindex="0" hidden>
+          <img src="assets/img/gc-queue.webp" alt="队列面板：多段舞蹈排成脚本，可设循环次数并一键执行" width="329" height="436" loading="lazy">
+          <p>队列编排：动作一段一段排好，设间隔与循环次数，一次执行就是一整场演出。</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="gc-cta reveal">
+      <a class="btn btn-primary" href="#contact">问软件怎么装</a>
+      <span class="gc-note">本体是你自己的也行；我们只做软件，按套算。</span>
+    </p>
   </section>
 
   <!-- ============ 2 · 怎么交付 ============ -->
@@ -266,14 +313,11 @@
         </div>
       </li>
       <li class="case reveal">
-        <div class="case-slot">
-          <span class="slot-title">群控界面</span>
-          <span class="slot-note">截图待补 · 你自己提供</span>
-        </div>
+        <img src="assets/img/gc-dance.jpg" alt="群控软件的舞蹈运控页：官方舞蹈与三方按键动作，按列表一键下发到多台" width="1500" height="718" loading="lazy">
         <div class="case-body">
           <p class="case-head">多机同步 · 3 个客户 / 3 套</p>
           <p class="case-line">一套命令打下去，多台对齐；用同一套编排工具，不用一台台手点。</p>
-          <p class="case-meta">群控软件 · 已交付</p>
+          <p class="case-meta">群控软件 · 已交付 · <a class="case-link" href="#groupcontrol">看界面</a></p>
         </div>
       </li>
       <li class="case reveal">
@@ -415,13 +459,13 @@
 
 <footer class="foot">
   <p class="foot-name">落地组</p>
-  <p class="foot-line">宇树 G1 / GO2 的二次开发与落地交付 · 场馆导览 · 舞台动作 · 多机同步 · 师资培训</p>
+  <p class="foot-line">宇树 G1 / GO2 的二次开发与落地交付 · 场馆导览 · 舞台动作 · 多机同步 · 群控软件 · 师资培训</p>
   <div class="foot-cols">
     <p>已交付：导览 7 台 / 3 个客户<br>群控 3 套 / 3 个客户<br>培训：两天 12 学时实操</p>
     <p>本页为内部预览版<br>正式对外发布待备案<br>备案号将在上线后填入此位</p>
   </div>
 </footer>
 
-<script src="assets/js/site.js" defer></script>
+<script src="assets/js/site.js?v=20261106c" defer></script>
 </body>
 </html>

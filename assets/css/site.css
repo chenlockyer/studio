@@ -808,15 +808,16 @@ a { color: inherit; text-decoration: none; }
 /* ---------- 导览区块：竖版真机视频在右，四步在左（与动作区块左右镜像）---------- */
 .navi-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 19rem);
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: start;
+  align-items: stretch;      /* 左栏撑到与视频同高，底边才对得齐 */
 }
 .navi-left {
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.25rem);
   align-content: start;
 }
+.navi-left .shots2 { margin-top: 0; }
 .navi-left .steps4 { margin-bottom: 0; }
 .navi-video > video {
   display: block;

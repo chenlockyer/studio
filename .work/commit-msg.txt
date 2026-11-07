@@ -1,6 +1,7 @@
-修：视频长宽比 + 手机首屏不再裁切
+文档：更新 README 与 REPORT（改名 / 去表单 / 上线）
 
-- <video width height> 属性是表现性提示，会把高度钉死，导致 aspect-ratio 失效；
-  .media-wide video 与 .chain-video > video 补 height:auto，三处视频恢复真实比例
-  （navi/group 16:9，chain 9:16）。桌面端此前「看着正常」只是容器宽度恰好等于 720 的巧合。
-- 手机首屏改为整块 16:9 视频带 + 下方文字，不再把 16:9 裁进竖框（原横向裁掉 72%）。
+- README 补线上地址、上线流程（master→origin/main 的 commit-tree 快进法）、
+  新目录项（404.html / robots.txt / DEPLOY.md / .nojekyll）
+- REPORT 新增第 9 章：改名会动字符集所以必须重建字体、删表单只留微信的取舍、
+  视频长宽比 bug 的完整根因链（width/height 属性压过 aspect-ratio）、
+  手机首屏改 16:9 视频带、GitHub Pages 子路径部署要点

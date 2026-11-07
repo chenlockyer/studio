@@ -20,3 +20,10 @@
 !.work/source-img/**
 
 # 保留入库：.work/scripts/、.work/*.md、.work/*.txt、.work/*.json
+
+# 部署产物与工具（由脚本生成，不入库）
+dist/
+.work/tools/
+.work/deliver/
+.wrangler/
+node_modules/

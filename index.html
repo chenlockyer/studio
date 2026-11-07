@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>落地组 · 宇树 G1 机器人落地交付｜场馆导览 · 多机群控 · 动作定制</title>
+<title>宇树机器人实验室 · 宇树 G1 机器人落地交付｜场馆导览 · 多机群控 · 动作定制</title>
 <meta name="description" content="宇树 G1 机器人落地交付服务商。场馆导览、多机群控、动作定制、师资培训。已交付导览 7 台 / 3 个客户，群控 3 套。全球范围可交付，勘察与交接可到场。">
 <meta name="keywords" content="宇树G1,人形机器人,场馆导览,多机群控,机器人二次开发,动作定制,机器人全球交付,师资培训">
 <meta name="theme-color" content="#0a0c0e">
 <meta property="og:type" content="website">
-<meta property="og:title" content="落地组 · 宇树 G1 机器人落地交付">
+<meta property="og:title" content="宇树机器人实验室 · 宇树 G1 机器人落地交付">
 <meta property="og:description" content="场馆导览 · 多机群控 · 动作定制。让 G1 在你的场馆里真正跑起来。">
-<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:image" content="https://chenlockyer.github.io/studio/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:url" content="https://chenlockyer.github.io/studio/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://chenlockyer.github.io/studio/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/site.css">
 <script>document.documentElement.classList.remove('no-js');</script>
@@ -21,7 +26,7 @@
 
 <header class="bar">
   <a class="wordmark" href="#top">
-    <span class="wm">落地组</span>
+    <span class="wm">宇树机器人实验室</span>
     <span class="wm-sub">全球交付</span>
   </a>
   <nav class="nav" aria-label="主导航">
@@ -324,7 +329,7 @@
   <!-- ============================================================
        五 · 交付实绩
        ============================================================ -->
-  <section class="paper" aria-labelledby="figs-title">
+  <section class="paper" id="figs" aria-labelledby="figs-title">
     <div class="wrap">
       <h2 class="h h-paper" id="figs-title">交付实绩</h2>
       <dl class="figs4">
@@ -461,52 +466,21 @@
       <div class="contact-say">
         <h2 class="h" id="contact-title">说清你这块场地，<br>我给你一份落地方案</h2>
         <p class="contact-sub">
-          先不报价。告诉我们场地情况，我们给出设备数量、站点规划、上线周期和交付清单。
+          不用填表。加微信，把场地照片和尺寸发过来，我们给出设备数量、站点规划、上线周期和交付清单。
         </p>
         <p class="contact-promise">全球交付 · 工作时间 30 分钟内回复</p>
-        <a class="contact-wx" href="assets/img/wechat-qr.png" data-wx>
-          <span class="contact-wx-k">微信</span>
-          <span class="contact-wx-d">扫码加微信，直接发场地照片和尺寸</span>
-        </a>
       </div>
 
-      <form class="ask" id="ask-form" novalidate>
-        <label class="field">
-          <span class="field-label">怎么称呼</span>
-          <input type="text" name="who" autocomplete="name" placeholder="姓名 + 单位">
-        </label>
-        <label class="field">
-          <span class="field-label">场地类型</span>
-          <select name="venue">
-            <option>科技馆 · 展厅</option>
-            <option>学校 · 实验室</option>
-            <option>园区 · 前台</option>
-            <option>商演 · 活动</option>
-            <option>自带 G1 · 仅需软件</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">大概什么时候要</span>
-          <select name="when">
-            <option>一个月内</option>
-            <option>本季度</option>
-            <option>年底前</option>
-            <option>先了解一下</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">联系方式</span>
-          <input type="text" name="contact" autocomplete="tel" placeholder="微信或手机">
-        </label>
-        <button class="btn btn-dark" type="submit">复制需求</button>
-        <p class="ask-hint" id="ask-hint" role="status">
-          填写后点击按钮，四项内容会合成一段话复制到剪贴板，直接粘贴到微信发送给我们。
-        </p>
-        <label class="ask-fallback" id="ask-fallback" hidden>
-          <span class="field-label">浏览器不让自动复制，全选这段后按 Ctrl+C</span>
-          <textarea id="ask-brief" rows="4" readonly></textarea>
-        </label>
-      </form>
+      <figure class="contact-qr">
+        <img src="assets/img/wechat-qr.png" width="720" height="720"
+             alt="宇树机器人实验室微信二维码，扫码即可加微信" decoding="async">
+        <figcaption>
+          <p class="qr-k">扫一扫，加微信</p>
+          <p class="qr-d">备注「G1 + 场地类型」。通过后把场地照片、尺寸和点位数量发过来就行。</p>
+          <a class="qr-save" href="assets/img/wechat-qr.png"
+             download="宇树机器人实验室-微信二维码.png">手机上扫不了自己的屏？保存图片，微信「扫一扫 → 相册」识别</a>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -514,7 +488,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p class="foot-name">落地组</p>
+    <p class="foot-name">宇树机器人实验室</p>
     <p class="foot-line">宇树 G1 机器人落地交付 · 场馆导览 · 多机群控 · 动作定制 · 师资培训</p>
     <div class="foot-cols foot-cols-plain">
       <div>
@@ -541,13 +515,15 @@
         <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
       </svg>
     </button>
-    <p class="wx-k">微信 · 落地组</p>
+    <p class="wx-k">微信 · 宇树机器人实验室</p>
     <p class="wx-title" id="wx-title">加微信，直接聊场地</p>
     <div class="wx-qr">
-      <img src="assets/img/wechat-qr.png" width="720" height="720" alt="落地组微信二维码" decoding="async">
+      <img src="assets/img/wechat-qr.png" width="720" height="720" alt="宇树机器人实验室微信二维码，扫码加微信" decoding="async">
     </div>
     <p class="wx-hint">备注「G1 + 场地类型」，30 分钟内回。</p>
-    <a class="wx-alt" href="#contact" data-wx-close>不方便加微信？填一份需求表单 →</a>
+    <a class="qr-save wx-save" href="assets/img/wechat-qr.png"
+       download="宇树机器人实验室-微信二维码.png">手机上扫不了自己的屏？保存图片，微信「扫一扫 → 相册」识别</a>
+    <a class="wx-alt" href="#figs" data-wx-close>先看看我们交付过什么 →</a>
   </div>
 </dialog>
 

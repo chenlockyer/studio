@@ -1,0 +1,29 @@
+# Cloudflare Pages 缓存与安全头
+# 这个文件只在 Cloudflare Pages 上生效，其他托管会忽略它
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  X-Frame-Options: SAMEORIGIN
+
+# 页面本身：每次都回源校验，改完立刻生效
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 静态资源没有内容指纹，给一周；改了文件名不变时最多滞后一周
+/assets/*
+  Cache-Control: public, max-age=604800
+
+# 字体与二维码几乎不变，放长一些
+/assets/fonts/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/assets/img/wechat-qr.png
+  Cache-Control: public, max-age=2592000
+
+/robots.txt
+  Cache-Control: public, max-age=86400

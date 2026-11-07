@@ -1,6 +1,6 @@
 /* ================================================================
-   落地组 · site.js
-   全部是增强：关掉脚本，页面仍然完整可读、可导航、可复制。
+   宇树机器人实验室 · site.js
+   全部是增强：关掉脚本，页面仍然完整可读、可导航。
    ================================================================ */
 (() => {
   'use strict';
@@ -17,7 +17,7 @@
     '.steps-d .dstep', '.handover', '.paper .fig',
     '.course-spec', '.goals-k', '.goals-list li', '.caution',
     '.faq-item', '.faq-aside',
-    '.contact-say > *', '.ask',
+    '.contact-say > *', '.contact-qr',
   ];
   const targets = [];
   for (const sel of PARTS) {
@@ -82,52 +82,7 @@
     });
   });
 
-  /* ---------------- 4 · 表单：复制成一段话，不做假提交 ---------------- */
-  const form = document.getElementById('ask-form');
-  const hint = document.getElementById('ask-hint');
-  const fallback = document.getElementById('ask-fallback');
-  const briefBox = document.getElementById('ask-brief');
-  if (form && hint) {
-    const DEFAULT_HINT = hint.textContent.trim();
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const val = (k) => (data.get(k) || '').toString().trim();
-      const brief = [
-        `称呼：${val('who') || '（待填）'}`,
-        `场地：${val('venue')}`,
-        `时间：${val('when')}`,
-        `联系：${val('contact') || '（待填）'}`,
-        '（从官网发的，想先要一份初步落地方案）',
-      ].join('\n');
-
-      const showFallback = () => {
-        if (!fallback || !briefBox) return;
-        briefBox.value = brief;
-        fallback.hidden = false;
-        briefBox.focus();
-        briefBox.select();
-      };
-
-      try {
-        await navigator.clipboard.writeText(brief);
-        hint.textContent = '已复制。直接粘贴到微信发给我们即可。';
-        if (fallback) fallback.hidden = true;
-      } catch {
-        // file:// 打开或非 HTTPS 时剪贴板接口不可用：给一段可全选的手动复制文本
-        hint.textContent = '这段需求已经生成，全选下面内容复制即可。';
-        showFallback();
-      }
-    });
-
-    form.addEventListener('reset', () => {
-      hint.textContent = DEFAULT_HINT;
-      if (fallback) fallback.hidden = true;
-    });
-  }
-
-  /* ---------------- 6 · 微信二维码弹层 ---------------- */
+  /* ---------------- 4 · 微信二维码弹层 ---------------- */
   const wxDialog = document.getElementById('wx-dialog');
   if (wxDialog && typeof wxDialog.showModal === 'function') {
     // 没有弹层能力的环境下，这些 <a> 会退化成直接打开二维码图片 —— 不拦截

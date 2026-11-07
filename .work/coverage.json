@@ -1,0 +1,9 @@
+{
+ "noto_cjk": 545,
+ "noto_total": 703,
+ "copy_cjk": 513,
+ "copy_missing_noto": 43,
+ "copy_missing_noto_ascii": 43,
+ "copy_missing_noto_nonascii": 0,
+ "ascii_missing_epi": 1
+}

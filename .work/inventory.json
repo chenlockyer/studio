@@ -1,0 +1,191 @@
+[
+ {
+  "name": "bg-contact.jpg",
+  "ext": ".jpg",
+  "bytes": 185810,
+  "w": 1600,
+  "h": 1482,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "bg-course.jpg",
+  "ext": ".jpg",
+  "bytes": 131468,
+  "w": 1400,
+  "h": 1166,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "bg-multi.jpg",
+  "ext": ".jpg",
+  "bytes": 219933,
+  "w": 1600,
+  "h": 1600,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "bg-stage.jpg",
+  "ext": ".jpg",
+  "bytes": 96237,
+  "w": 1400,
+  "h": 1400,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "bg-tour.jpg",
+  "ext": ".jpg",
+  "bytes": 200305,
+  "w": 1600,
+  "h": 1600,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "reel-1-front.jpg",
+  "ext": ".jpg",
+  "bytes": 156648,
+  "w": 1080,
+  "h": 1350,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "reel-2-walk.jpg",
+  "ext": ".jpg",
+  "bytes": 171816,
+  "w": 1080,
+  "h": 1350,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "reel-3-dance.jpg",
+  "ext": ".jpg",
+  "bytes": 89965,
+  "w": 1080,
+  "h": 1350,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "reel-4-conduct.jpg",
+  "ext": ".jpg",
+  "bytes": 57500,
+  "w": 1080,
+  "h": 1350,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "thumb-stage.jpg",
+  "ext": ".jpg",
+  "bytes": 18451,
+  "w": 720,
+  "h": 480,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "thumb-tour-card.jpg",
+  "ext": ".jpg",
+  "bytes": 43132,
+  "w": 720,
+  "h": 488,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "ui-1-map.jpg",
+  "ext": ".jpg",
+  "bytes": 27574,
+  "w": 1200,
+  "h": 519,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "ui-2-plan.jpg",
+  "ext": ".jpg",
+  "bytes": 99852,
+  "w": 1200,
+  "h": 750,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "ui-3-edit.jpg",
+  "ext": ".jpg",
+  "bytes": 47195,
+  "w": 1200,
+  "h": 591,
+  "mode": "RGB",
+  "has_alpha": false
+ },
+ {
+  "name": "导览-准备页面.png",
+  "ext": ".png",
+  "bytes": 72924,
+  "w": 1915,
+  "h": 915,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "导览主页面.png",
+  "ext": ".png",
+  "bytes": 189132,
+  "w": 1913,
+  "h": 914,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "支持自定义舞蹈队列一键下发.png",
+  "ext": ".png",
+  "bytes": 27305,
+  "w": 329,
+  "h": 436,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "群控-主页面.png",
+  "ext": ".png",
+  "bytes": 116621,
+  "w": 1914,
+  "h": 915,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "群控-官方舞蹈页面.png",
+  "ext": ".png",
+  "bytes": 155607,
+  "w": 1915,
+  "h": 917,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "群控-自定义按键.png",
+  "ext": ".png",
+  "bytes": 46492,
+  "w": 476,
+  "h": 750,
+  "mode": "RGBA",
+  "has_alpha": true
+ },
+ {
+  "name": "群控手机端.jpg",
+  "ext": ".jpg",
+  "bytes": 663323,
+  "w": 1156,
+  "h": 2510,
+  "mode": "RGB",
+  "has_alpha": false
+ }
+]

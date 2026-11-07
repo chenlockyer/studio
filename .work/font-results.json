@@ -1,0 +1,22 @@
+[
+ {
+  "file": "noto-sans-sc-400.subset.woff2",
+  "bytes": 88248,
+  "source": "NotoSansSC-400.ttf"
+ },
+ {
+  "file": "noto-sans-sc-500.subset.woff2",
+  "bytes": 88504,
+  "source": "NotoSansSC-500.ttf"
+ },
+ {
+  "file": "noto-sans-sc-700.subset.woff2",
+  "bytes": 89540,
+  "source": "NotoSansSC-700.ttf"
+ },
+ {
+  "file": "epilogue-latin.woff2",
+  "bytes": 41672,
+  "source": "Epilogue-VF.ttf"
+ }
+]

@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>落地组 · 同一台 G1，换一块场地</title>
-<meta name="description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作定制、多机同步、师资培训。已交付导览 7 台 / 3 个客户，群控 3 套 / 3 个客户。">
+<meta name="description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作、多机群控、师资培训。已交付导览 7 台 / 3 个客户，群控 3 套 / 3 个客户。">
 <meta name="theme-color" content="#0b0d0f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="落地组 · 同一台 G1，换一块场地">
-<meta property="og:description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作定制、多机同步、师资培训。">
-<meta property="og:image" content="assets/img/reel-2-walk.jpg">
+<meta property="og:description" content="宇树 G1 / GO2 的二次开发与落地交付：场馆导览、舞台动作、多机群控、师资培训。">
+<meta property="og:image" content="assets/img/opt/reel2-960.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/css/site.css">
-<link rel="preload" href="assets/fonts/noto-sans-sc.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/noto-sans-sc-400.subset.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/epilogue-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
 <script>document.documentElement.classList.remove('no-js');</script>
 </head>
 <body>
@@ -22,401 +22,479 @@
 
 <header class="bar">
   <a class="wordmark" href="#top">
-    <span class="wordmark-cn">落地组</span>
-    <span class="wordmark-en">ON&nbsp;SITE</span>
+    <span class="wm-cn">落地组</span>
+    <span class="wm-sub">深圳坪山</span>
   </a>
   <nav class="nav" aria-label="主导航">
-    <a href="#scenes">三种现场</a>
-    <a href="#delivery">怎么交付</a>
-    <a href="#plan">要几台</a>
+    <a href="#navi">导览</a>
+    <a href="#group">群控</a>
+    <a href="#deliver">交付</a>
     <a href="#course">培训</a>
     <a href="#faq">问答</a>
-    <a class="btn btn-nav" href="#contact">说你的场地</a>
   </nav>
+  <a class="btn btn-primary btn-bar" href="#contact">说清你的场地</a>
 </header>
 
 <main id="top">
 
-  <!-- ============ HERO · pinned poster ============ -->
-  <section class="hero" id="hero" aria-labelledby="hero-title">
-    <div class="hero-track">
-      <div class="hero-stage">
-        <div class="hero-media" aria-hidden="true">
-          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/reel-2-walk.jpg">
-            <source src="assets/video/tour-walk.mp4" type="video/mp4">
-          </video>
-          <div class="hero-scrim"></div>
-        </div>
+  <!-- ================= 首屏 · 拼贴报头 + 标题落在 42% 轴线上 ================= -->
+  <section class="mast" aria-labelledby="mast-title">
+    <div class="mosaic" aria-hidden="true">
+      <picture class="cell c-a">
+        <source type="image/avif" srcset="assets/img/opt/reel2-480.avif 480w, assets/img/opt/reel2-960.avif 960w, assets/img/opt/reel2-1440.avif 1440w" sizes="(max-width:760px) 50vw, 26vw">
+        <source type="image/webp" srcset="assets/img/opt/reel2-480.webp 480w, assets/img/opt/reel2-960.webp 960w, assets/img/opt/reel2-1440.webp 1440w" sizes="(max-width:760px) 50vw, 26vw">
+        <img src="assets/img/opt/reel2-960.jpg" alt="" width="1080" height="1350">
+      </picture>
+      <picture class="cell c-b">
+        <source type="image/avif" srcset="assets/img/opt/reel1-480.avif 480w, assets/img/opt/reel1-960.avif 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <source type="image/webp" srcset="assets/img/opt/reel1-480.webp 480w, assets/img/opt/reel1-960.webp 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <img src="assets/img/opt/reel1-960.jpg" alt="" width="1080" height="1350" loading="lazy">
+      </picture>
+      <picture class="cell c-c">
+        <source type="image/avif" srcset="assets/img/opt/reel3-480.avif 480w, assets/img/opt/reel3-960.avif 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <source type="image/webp" srcset="assets/img/opt/reel3-480.webp 480w, assets/img/opt/reel3-960.webp 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <img src="assets/img/opt/reel3-960.jpg" alt="" width="1080" height="1350" loading="lazy">
+      </picture>
+      <picture class="cell c-d">
+        <source type="image/avif" srcset="assets/img/opt/reel4-480.avif 480w, assets/img/opt/reel4-960.avif 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <source type="image/webp" srcset="assets/img/opt/reel4-480.webp 480w, assets/img/opt/reel4-960.webp 960w" sizes="(max-width:760px) 25vw, 17vw">
+        <img src="assets/img/opt/reel4-960.jpg" alt="" width="1080" height="1350" loading="lazy">
+      </picture>
+      <p class="cell tile tile-accent">
+        <span class="tile-num nums">7</span>
+        <span class="tile-cap">台导览已交付<br>3 个客户</span>
+      </p>
+      <p class="cell tile tile-paper">
+        <span class="tile-num nums">3</span>
+        <span class="tile-cap">套群控已交付<br>3 个客户</span>
+      </p>
+    </div>
 
-        <div class="hero-strip" aria-hidden="true">
-          <div class="strip-track">
-            <figure class="strip-frame is-live">
-              <img src="assets/img/reel-1-front.jpg" alt="" width="1080" height="1350">
-            </figure>
-            <figure class="strip-frame">
-              <img src="assets/img/reel-2-walk.jpg" alt="" width="1080" height="1350" loading="lazy">
-            </figure>
-            <figure class="strip-frame">
-              <img src="assets/img/reel-3-dance.jpg" alt="" width="1080" height="1350" loading="lazy">
-            </figure>
-            <figure class="strip-frame">
-              <img src="assets/img/reel-4-conduct.jpg" alt="" width="1080" height="1350" loading="lazy">
-            </figure>
-          </div>
-          <p class="strip-caption" id="hero-caption">学院楼 · 2 台 G1</p>
-        </div>
+    <div class="mast-foot">
+      <p class="standfirst">
+        宇树 G1 与 GO2 的二次开发与落地交付：场馆导览、舞台动作、多机群控、师资培训。从勘察、建图、编排到现场联调，一直做到场馆自己的人能改方案。
+      </p>
 
-        <div class="hero-line">
-          <h1 class="hero-title" id="hero-title">
-            <span class="half half-a">同一台 G1，</span>
-            <span class="half half-b">换一块场地。</span>
-          </h1>
-        </div>
-
-        <p class="hero-support reveal">
-          场馆导览、舞台动作、多机同步。宇树 G1 / GO2 的二次开发与落地交付：
-          建图、讲解词、动作编排、现场联调，到场馆自己的人能改方案。
-        </p>
-
-        <div class="hero-foot reveal">
+      <div class="mast-title">
+        <h1 id="mast-title">
+          <span class="mask"><span>同一台 G1，</span></span>
+          <span class="mask"><span>换一块场地。</span></span>
+        </h1>
+        <p class="mast-act">
           <a class="btn btn-primary" href="#contact">说清你的场地</a>
-          <p class="hero-facts">
-            <span><b data-count="7">7</b> 台导览 · <b data-count="3">3</b> 个客户</span>
-            <span><b data-count="3">3</b> 套群控 · <b data-count="3">3</b> 个客户</span>
-            <i>学院楼那条线：3 站、直线 24 米</i>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 1 · 三种现场（整屏切换） ============ -->
-  <section class="scenes" id="scenes" aria-labelledby="scenes-title">
-    <div class="scenes-head">
-      <h2 class="section-title reveal" id="scenes-title">一台机器，三种活</h2>
-      <p class="scenes-hint reveal">往下滚，一屏一件事</p>
-    </div>
-
-    <div class="scene-track">
-      <div class="scene-stage">
-
-        <article class="panel is-active" aria-labelledby="p1-name">
-          <div class="panel-media">
-            <video class="panel-video" autoplay muted loop playsinline preload="metadata"
-                   poster="assets/img/bg-tour.jpg" aria-hidden="true">
-              <source src="assets/video/tour-walk.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="panel-card">
-            <p class="card-name" id="p1-name">场馆导览</p>
-            <p class="card-line">带路，到一个站点讲一次</p>
-            <p class="card-fact">已交付 7 台 · 3 个客户</p>
-            <img class="card-thumb" src="assets/img/thumb-tour-card.jpg" alt="导览方案页：三个站点排在真实地图上的路线，直线合计 24 米" width="720" height="488" loading="lazy">
-            <a class="btn btn-card" href="#delivery">看路线怎么排</a>
-          </div>
-        </article>
-
-        <article class="panel" aria-labelledby="p2-name">
-          <div class="panel-media">
-            <img src="assets/img/bg-stage.jpg" alt="实验室里，G1 抬起手臂做一组舞蹈动作" width="1400" height="1400" loading="lazy">
-          </div>
-          <div class="panel-card">
-            <p class="card-name" id="p2-name">舞台动作</p>
-            <p class="card-line">你给的舞，拆到关节上</p>
-            <p class="card-fact">拉丁舞 · 指挥家 · 编队动作</p>
-            <img class="card-thumb" src="assets/img/thumb-stage.jpg" alt="G1 在实验室内做手臂动作" width="720" height="480" loading="lazy">
-            <a class="btn btn-card" href="#contact">说说你要的动作</a>
-          </div>
-        </article>
-
-        <article class="panel" aria-labelledby="p3-name">
-          <div class="panel-media">
-            <img src="assets/img/bg-multi.jpg" alt="走廊尽头，一台 G1 站在展厅入口" width="1600" height="1600" loading="lazy">
-          </div>
-          <div class="panel-card">
-            <p class="card-name" id="p3-name">多机同步</p>
-            <p class="card-line">一套命令打下去，动作不散队</p>
-            <p class="card-fact">群控 3 套 · 3 个客户</p>
-            <div class="thumb-slot">
-              <span class="slot-title">群控界面</span>
-              <span class="slot-note">截图待补</span>
-            </div>
-            <a class="btn btn-card" href="#contact">问多机怎么布</a>
-          </div>
-        </article>
-
-        <nav class="scene-dots" aria-label="三种现场，切换">
-          <button type="button" class="dot is-on" data-go="0" aria-current="true" aria-label="场馆导览"></button>
-          <button type="button" class="dot" data-go="1" aria-current="false" aria-label="舞台动作"></button>
-          <button type="button" class="dot" data-go="2" aria-current="false" aria-label="多机同步"></button>
-        </nav>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 2 · 怎么交付 ============ -->
-  <section class="delivery" id="delivery" aria-labelledby="delivery-title">
-    <div class="delivery-copy">
-      <h2 class="section-title reveal" id="delivery-title">我们卖的不是机器人</h2>
-      <p class="section-lead reveal">硬件是宇树的。让它在你场地上真的跑起来，是下面三件事。</p>
-
-      <div class="step is-live" data-step="0">
-        <p class="step-line">先去你的场地走一遍。</p>
-        <p class="step-note">地面、光线、网络、人流、充电位，哪一项都能决定它跑不跑得通。勘察完才谈方案。</p>
-      </div>
-      <div class="step" data-step="1">
-        <p class="step-line">再让机器人把地图跑出来。</p>
-        <p class="step-note">建图用本体雷达，不依赖外网；边走边出图，走偏了当场能看见。</p>
-      </div>
-      <div class="step" data-step="2">
-        <p class="step-line">路线在真地图上排，讲解词按你的展品写。</p>
-        <p class="step-note">站点顺序、朝向、每站讲什么，都在场馆自己的后台上改；保存后下一次带路立刻就是新内容。</p>
-      </div>
-      <div class="step" data-step="3">
-        <p class="step-line">真机上跑通一遍，再教你们自己的人。</p>
-        <p class="step-note">到站、讲解、被客人打断、回到路线；交接时教两个人：开机、改方案、急停。</p>
-      </div>
-    </div>
-
-    <div class="delivery-stage">
-      <div class="delivery-sticky">
-        <div class="stage-sizer">
-          <div class="stage-frame is-live" data-ui data-stage="0">
-            <img src="assets/img/ui-2-plan.jpg" alt="导览方案页：站点顺序、讲解词与路线地图" width="1200" height="750">
-          </div>
-          <div class="stage-frame" data-ui data-stage="1">
-            <img src="assets/img/ui-1-map.jpg" alt="机器人建图时的实时点云界面" width="1200" height="519" loading="lazy">
-          </div>
-          <div class="stage-frame" data-ui data-stage="2">
-            <img src="assets/img/ui-3-edit.jpg" alt="二维地图编辑界面，用于修正建图结果" width="1200" height="591" loading="lazy">
-          </div>
-        </div>
-        <p class="stage-label" id="stage-label">勘察之后，先在后台把这条路排出来。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ 3 · 场地适配器（唯一一个活的东西） ============ -->
-  <section class="plan" id="plan" aria-labelledby="plan-title">
-    <div class="plan-head">
-      <h2 class="section-title reveal" id="plan-title">先看看你这块地要几台</h2>
-      <p class="section-lead reveal">选一个最像的，我直接给你一个排法。不报价，先算清楚要做什么。</p>
-    </div>
-
-    <div class="plan-controls reveal" role="group" aria-label="场地类型">
-      <button class="chip is-on" type="button" data-venue="0" aria-pressed="true">科技馆 · 展厅</button>
-      <button class="chip" type="button" data-venue="1" aria-pressed="false">学校 · 实验室</button>
-      <button class="chip" type="button" data-venue="2" aria-pressed="false">园区 · 前台</button>
-      <button class="chip" type="button" data-venue="3" aria-pressed="false">商演 · 活动</button>
-      <button class="chip" type="button" data-venue="4" aria-pressed="false">我自己有本体</button>
-    </div>
-
-    <div class="plan-out reveal" aria-live="polite">
-      <div class="out-head">
-        <p class="out-venue" id="out-venue">科技馆 · 展厅</p>
-        <p class="out-note">按常见场地规模估算，实际以现场勘察为准</p>
-      </div>
-      <dl class="out-list">
-        <div class="out-row"><dt>机器人</dt><dd id="out-machines">2 台 G1</dd></div>
-        <div class="out-row"><dt>站点</dt><dd id="out-stops">3 个</dd></div>
-        <div class="out-row"><dt>单程</dt><dd id="out-time">约 8 分钟带讲</dd></div>
-        <div class="out-row"><dt>上线</dt><dd id="out-lead">2–3 周</dd></div>
-      </dl>
-      <p class="out-scope" id="out-scope">交付含：场地勘察 · 建图采点 · 讲解词定制 · 真机联调 · 2 人交接培训 · 3 个月维保</p>
-      <p class="out-ask">说清你这块地有多大、现在建到什么程度，30 分钟内回一份初步排法。</p>
-      <a class="btn btn-primary" href="#contact">把场地发给你</a>
-    </div>
-
-    <table class="plan-table reveal">
-      <caption>五种场地的大致排法（参考，不是报价）</caption>
-      <thead>
-        <tr><th scope="col">场地</th><th scope="col">机器人</th><th scope="col">站点</th><th scope="col">上线</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">科技馆 · 展厅</th><td>2 台 G1</td><td>3–5 个</td><td>2–3 周</td></tr>
-        <tr><th scope="row">学校 · 实验室</th><td>1–2 台</td><td>3 个</td><td>2 周</td></tr>
-        <tr><th scope="row">园区 · 前台</th><td>1 台</td><td>2–3 个</td><td>1–2 周</td></tr>
-        <tr><th scope="row">商演 · 活动</th><td>按场次</td><td>不定站点</td><td>3–4 周出片</td></tr>
-        <tr><th scope="row">自带本体 · 只买软件</th><td>你出设备</td><td>按场地定</td><td>1–2 周</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- ============ 4 · 证据 ============ -->
-  <section class="proof" id="proof" aria-labelledby="proof-title">
-    <h2 class="section-title reveal visually-hidden" id="proof-title">证据</h2>
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>学院楼 <i>·</i> 209 实验室 <i>·</i> 210 实验室 <i>·</i> 电梯口 <i>·</i> 3 个站点 <i>·</i> 直线 24 米 <i>·</i> 7 台设备 <i>·</i> 3 个客户 <i>·</i> 3 套群控 <i>·</i> </span>
-        <span>学院楼 <i>·</i> 209 实验室 <i>·</i> 210 实验室 <i>·</i> 电梯口 <i>·</i> 3 个站点 <i>·</i> 直线 24 米 <i>·</i> 7 台设备 <i>·</i> 3 个客户 <i>·</i> 3 套群控 <i>·</i> </span>
-      </div>
-    </div>
-    <p class="marquee-note reveal">上面每一段都是真的：站点名、里程、台数、客户数，来自已经跑起来的场地。</p>
-
-    <ul class="cases">
-      <li class="case reveal">
-        <img src="assets/img/thumb-tour-card.jpg" alt="导览方案页的路线地图：3 个站点、直线合计 24 米" width="720" height="488" loading="lazy">
-        <div class="case-body">
-          <p class="case-head">高校实验室楼 · 2 台 G1</p>
-          <p class="case-line">3 个站点：209 → 210 → 电梯口，直线约 24 米。可以被打断、可以临时改路线。</p>
-          <p class="case-meta">深圳某高校 · 在跑</p>
-        </div>
-      </li>
-      <li class="case reveal">
-        <div class="case-slot">
-          <span class="slot-title">群控界面</span>
-          <span class="slot-note">截图待补 · 你自己提供</span>
-        </div>
-        <div class="case-body">
-          <p class="case-head">多机同步 · 3 个客户 / 3 套</p>
-          <p class="case-line">一套命令打下去，多台对齐；用同一套编排工具，不用一台台手点。</p>
-          <p class="case-meta">群控软件 · 已交付</p>
-        </div>
-      </li>
-      <li class="case reveal">
-        <img src="assets/img/thumb-stage.jpg" alt="G1 在实验室里做动作" width="720" height="480" loading="lazy">
-        <div class="case-body">
-          <p class="case-head">演出类 · 动作定制</p>
-          <p class="case-line">拉丁舞与指挥家项目：动作已经上机，现在在收敛稳定性。“能跳”和“能当众跳”是两件事。</p>
-          <p class="case-meta">在调 · 月度合作</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ============ 5 · 培训 ============ -->
-  <section class="course" id="course" aria-labelledby="course-title">
-    <div class="course-inner">
-      <div class="course-copy">
-        <h2 class="section-title reveal" id="course-title">两天，教会你们自己的老师</h2>
-        <p class="section-lead reveal">不是听讲式科普。两天 12 学时，约 75% 在真机上。</p>
-
-        <ul class="course-list reveal">
-          <li><b>20–24 人，分 4 组轮换。</b>G1 EDU × 2（23 与 29 自由度各一）、GO2 EDU × 2。</li>
-          <li><b>顺序不颠倒。</b>先用 GO2 四足建立手感（风险低、当堂见效），再上 G1 人形，先过安全规程。</li>
-          <li><b>留出翻车时间。</b>这类课真正的耗时不在讲课，在环境配不通、SDK 版本不对、网卡选错。</li>
-          <li><b>结业产出。</b>每组一份可运行的代码包 + 一段现场真机演示视频。</li>
-        </ul>
-
-        <div class="course-goals reveal">
-          <p class="goals-head">课程结束时能现场验收的七件事</p>
-          <p class="goals-line">
-            <span>跑通 SDK 与 DDS 通信</span>
-            <span>调用高层接口，让 GO2 走方形回原点</span>
-            <span>从机器人状态里数出真实关节数</span>
-            <span>在安全规程下完成起身站立与行走</span>
-            <span>让单个关节小幅受控摆动</span>
-            <span>同一套代码先仿真、后真机</span>
-            <span>两人一组完成 GO2 巡航 + G1 迎宾</span>
-          </p>
-        </div>
-
-        <p class="course-cta reveal">
-          <a class="btn btn-primary" href="#contact">约一次开班</a>
-          <a class="btn btn-quiet" href="#contact">我们来你们学校</a>
+          <a class="quiet-link" href="#proof">看已经跑起来的现场</a>
         </p>
       </div>
 
-      <figure class="course-photo reveal">
-        <img src="assets/img/bg-course.jpg" alt="G1 站在实验室通道里，旁边是操作与拍摄设备" width="1400" height="1166" loading="lazy">
-        <figcaption>2 台 G1 + 2 台 GO2，4 组轮换，一台一台真机上手。</figcaption>
+      <p class="mast-fact">
+        学院楼那条线：3 个站点，直线 24 米
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 一 · 导览 · 一张按步骤排下来的板 ================= -->
+  <section class="board-sec" id="navi" aria-labelledby="navi-title">
+    <div class="sec-head">
+      <p class="side">
+        <span class="side-k">现场</span>
+        学院楼 209 实验室、210 实验室、电梯口。<br>3 个站点，直线合计 24 米。
+      </p>
+      <h2 class="sec-title" id="navi-title">带路这件事，<br>被写成了四步</h2>
+    </div>
+
+    <div class="board" data-ui>
+      <div class="row is-open" tabindex="0" role="button" aria-expanded="true">
+        <p class="row-name">地图管理</p>
+        <p class="row-kind">准备一</p>
+        <p class="row-fact">一次采集建图</p>
+        <p class="row-dur nums">209 测试 2</p>
+        <p class="row-state">已完成</p>
+        <p class="row-note">选择已建地图，或执行一次采集建图。建图用本体雷达，不依赖外网。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">标注站点</p>
+        <p class="row-kind">准备二</p>
+        <p class="row-fact">标注位置与朝向</p>
+        <p class="row-dur nums">3 个</p>
+        <p class="row-state">已完成</p>
+        <p class="row-note">标注各站点在地图中的位置与朝向。朝向错了，机器人会对着墙说话。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">设定人设</p>
+        <p class="row-kind">准备三</p>
+        <p class="row-fact">身份、风格、禁答范围</p>
+        <p class="row-dur nums">已生效</p>
+        <p class="row-state">已完成</p>
+        <p class="row-note">设定导览员身份、说话风格与禁答范围。问到不能答的，它会把话交回给人。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">制定导览方案</p>
+        <p class="row-kind">准备四</p>
+        <p class="row-fact">顺序、讲解词、临时变更</p>
+        <p class="row-dur nums">2 份</p>
+        <p class="row-state">已完成</p>
+        <p class="row-note">定义站点顺序、各站讲解词与临时变更处理。保存后下一次带路即是新内容，不用找我们。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">209 实验室</p>
+        <p class="row-kind">站点一</p>
+        <p class="row-fact">起点</p>
+        <p class="row-dur nums">0 米</p>
+        <p class="row-state">在跑</p>
+        <p class="row-note">第一站。从门口起步，讲完转身进走廊。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">210 实验室</p>
+        <p class="row-kind">站点二</p>
+        <p class="row-fact">走廊对面</p>
+        <p class="row-dur nums">11 米</p>
+        <p class="row-state">在跑</p>
+        <p class="row-note">第二站。被客人打断最多的一站，讲完要能自己接回路线。</p>
+      </div>
+      <div class="row" tabindex="0" role="button" aria-expanded="false">
+        <p class="row-name">电梯口</p>
+        <p class="row-kind">站点三</p>
+        <p class="row-fact">终点</p>
+        <p class="row-dur nums">13 米</p>
+        <p class="row-state">在跑</p>
+        <p class="row-note">第三站。人流最杂的位置，也是三条路线都要经过的交叉口。</p>
+      </div>
+    </div>
+
+    <div class="evidence">
+      <figure class="shot" data-ui>
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/navi-home-960.avif 960w, assets/img/opt/navi-home-1440.avif 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <source type="image/webp" srcset="assets/img/opt/navi-home-960.webp 960w, assets/img/opt/navi-home-1440.webp 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <img src="assets/img/opt/navi-home-960.jpg" alt="导览机器人接待页：定位运行中，中间是本体雷达建出的三维点云地图" width="1913" height="914" loading="lazy">
+        </picture>
+        <figcaption>接待页：定位、导航、语音三个开关，下面是本体雷达实时建出的点云。</figcaption>
+      </figure>
+      <figure class="shot" data-ui>
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/navi-prep-960.avif 960w, assets/img/opt/navi-prep-1440.avif 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <source type="image/webp" srcset="assets/img/opt/navi-prep-960.webp 960w, assets/img/opt/navi-prep-1440.webp 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <img src="assets/img/opt/navi-prep-960.jpg" alt="准备页：地图管理、标注站点、设定人设、制定导览方案四项全部已完成" width="1915" height="915" loading="lazy">
+        </picture>
+        <figcaption>准备页：上面这张板子就是这一页的四行，四项都打勾之后，首页变成接待页。</figcaption>
       </figure>
     </div>
   </section>
 
-  <!-- ============ 6 · 问答 ============ -->
-  <section class="faq" id="faq" aria-labelledby="faq-title">
-    <h2 class="section-title reveal" id="faq-title">你可能想问的</h2>
-    <div class="faq-body">
-      <ul class="faq-list" role="tablist" aria-orientation="vertical" aria-label="常见问题">
-        <li><button class="faq-q is-on" type="button" role="tab" aria-selected="true" aria-controls="a0" id="q0" tabindex="0">机器人是我买还是你们带？</button></li>
-        <li><button class="faq-q" type="button" role="tab" aria-selected="false" aria-controls="a1" id="q1" tabindex="-1">我们场地还没建好，能先做吗？</button></li>
-        <li><button class="faq-q" type="button" role="tab" aria-selected="false" aria-controls="a2" id="q2" tabindex="-1">多久能上线？</button></li>
-        <li><button class="faq-q" type="button" role="tab" aria-selected="false" aria-controls="a3" id="q3" tabindex="-1">人多、断网、光线差，还稳吗？</button></li>
-        <li><button class="faq-q" type="button" role="tab" aria-selected="false" aria-controls="a4" id="q4" tabindex="-1">以后改讲解词、加站点，我自己能改吗？</button></li>
-        <li><button class="faq-q" type="button" role="tab" aria-selected="false" aria-controls="a5" id="q5" tabindex="-1">出了问题谁负责，多久到场？</button></li>
+  <!-- ================= 二 · 群控 · 不一样的格子 + 真按键 ================= -->
+  <section class="tiles-sec" id="group" aria-labelledby="group-title">
+    <h2 class="sec-title axis-title" id="group-title">一套命令，<br>多台一起动</h2>
+
+    <div class="tiles">
+      <div class="t tile-head">
+        <p class="t-lead">群控不是同时按播放。每条命令是一串手柄按键，带触发时间、持续时间与活动空间；队列定顺序，同步间隔定对齐。</p>
+      </div>
+
+      <figure class="t tile-photo">
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/multi-480.avif 480w, assets/img/opt/multi-960.avif 960w, assets/img/opt/multi-1440.avif 1440w" sizes="(max-width:760px) 92vw, 34vw">
+          <source type="image/webp" srcset="assets/img/opt/multi-480.webp 480w, assets/img/opt/multi-960.webp 960w, assets/img/opt/multi-1440.webp 1440w" sizes="(max-width:760px) 92vw, 34vw">
+          <img src="assets/img/opt/multi-960.jpg" alt="展厅入口，一台 G1 站在通道尽头" width="1600" height="1600" loading="lazy">
+        </picture>
+      </figure>
+
+      <figure class="t tile-film">
+        <video class="clip" muted loop playsinline preload="none" poster="assets/img/opt/poster-dance.jpg" width="720" height="1280" aria-label="G1 在实验室内跳一段舞蹈动作">
+          <source src="assets/video/opt/dance-540.mp4" type="video/mp4">
+        </video>
+        <figcaption>动作在真机上排练：能跳，和能当众跳，是两件事。</figcaption>
+      </figure>
+
+      <div class="t tile-fig">
+        <p class="t-num nums">2.0<span>s</span></p>
+        <p class="t-cap">同步模式默认间隔。调对了，多台动作才不散队。</p>
+      </div>
+
+      <ul class="t tile-list">
+        <li>查尔斯顿舞</li>
+        <li>截拳道</li>
+        <li>扭扭舞</li>
+        <li>功夫</li>
+        <li>机械舞</li>
+        <li>格斗</li>
       </ul>
 
-      <div class="faq-pane">
-        <div class="faq-a is-on" id="a0" role="tabpanel" aria-labelledby="q0" tabindex="0">
-          <p>两种都行。你自己买本体，我们做落地，按项目算；也可以连本体一起配齐。具体范围按你的场地定。</p>
+      <div class="t tile-say">
+        <p>红色的那个按钮是紧急保护模式。不论队列走到哪，一键停下——现场演练时先教这一个。</p>
+      </div>
+
+      <div class="t tile-say alt">
+        <p>一台手机就能下发：手机端跑的是同一张命令表，勾选机器、选队列、点执行。现场没有电脑也能改。</p>
+      </div>
+
+      <!-- 这个页面上唯一可以动手的东西 -->
+      <div class="pad" id="pad">
+        <p class="pad-head">按一下试试：先按一个肩键，再按一个字母键</p>
+        <div class="pad-rows">
+          <div class="pad-group" role="group" aria-label="肩键">
+            <button type="button" class="key" data-slot="0" data-val="L1">L1</button>
+            <button type="button" class="key" data-slot="0" data-val="L2">L2</button>
+            <button type="button" class="key is-on" data-slot="0" data-val="R1" aria-pressed="true">R1</button>
+            <button type="button" class="key" data-slot="0" data-val="R2">R2</button>
+          </div>
+          <div class="pad-group" role="group" aria-label="第二个键">
+            <button type="button" class="key" data-slot="1" data-val="A">A</button>
+            <button type="button" class="key" data-slot="1" data-val="B">B</button>
+            <button type="button" class="key" data-slot="1" data-val="X">X</button>
+            <button type="button" class="key" data-slot="1" data-val="Y">Y</button>
+            <button type="button" class="key is-on" data-slot="1" data-val="B" aria-pressed="true">B</button>
+            <button type="button" class="key" data-slot="1" data-val="Select">Select</button>
+            <button type="button" class="key" data-slot="1" data-val="↑">↑</button>
+            <button type="button" class="key" data-slot="1" data-val="↓">↓</button>
+            <button type="button" class="key" data-slot="1" data-val="←">←</button>
+            <button type="button" class="key" data-slot="1" data-val="→">→</button>
+          </div>
         </div>
-        <div class="faq-a" id="a1" role="tabpanel" aria-labelledby="q1" tabindex="0" hidden>
-          <p>能。先做勘察和建图，等场地成型再定站点。最怕的是装修完才叫我们。那时候点位全得重来。</p>
+        <div class="pad-out" aria-live="polite">
+          <p class="pad-seq nums" id="pad-seq">R1 + B</p>
+          <p class="pad-name" id="pad-name">舞蹈模式</p>
+          <p class="pad-meta" id="pad-meta">触发 0.5 秒 · 持续 3.0 秒 · 原地</p>
         </div>
-        <div class="faq-a" id="a2" role="tabpanel" aria-labelledby="q2" tabindex="0" hidden>
-          <p>标准场馆大约 2–3 周：勘察与建图一周，点位、讲解词和联调一周，现场交接两三天。演出类按出片周期算，通常 3–4 周。</p>
+        <p class="pad-hint" id="pad-hint">凑不出来的组合，说明这条命令不在表里。</p>
+      </div>
+    </div>
+
+    <div class="cmd-all">
+      <p class="cmd-head">命令表里现在有的（U2 专属的只有 U2 会做）</p>
+      <ul class="cmd-list">
+        <li><b>舞蹈模式</b><span class="nums">R1 + B</span>持续 3.0 秒<i>原地</i></li>
+        <li><b>查尔斯顿舞 1</b><span class="nums">R1 + ↑</span>持续 0.5 秒<i>→ 1 米</i></li>
+        <li><b>查尔斯顿舞 2</b><span class="nums">R1 + ←</span>持续 0.5 秒<i>↑ 1 米，← 1 米</i></li>
+        <li><b>查尔斯顿舞 3</b><span class="nums">R1 + →</span>持续 0.5 秒<i>→ 3 米</i></li>
+        <li><b>截拳道</b><span class="nums">R2 + ↑</span>持续 0.5 秒<i>3 米见方</i></li>
+        <li><b>扭扭舞</b><span class="nums">R2 + ←</span>持续 0.5 秒<i>3 米见方</i></li>
+        <li><b>功夫</b><span class="nums">R1 + Select</span>持续 0.5 秒<i>↑ 5 米，仅 U2</i></li>
+        <li><b>机械舞 3</b><span class="nums">R1 + ↓</span>持续 0.5 秒<i>3 米见方，仅 U2</i></li>
+        <li><b>格斗</b><span class="nums">R2 + ↓</span>持续 0.5 秒<i>↑ 5 米，仅 U2</i></li>
+        <li><b>机械舞 1</b><span class="nums">L1 + X</span>持续 0.5 秒<i>← 2 米，→ 2 米，仅 U2</i></li>
+        <li><b>机械舞 4</b><span class="nums">L1 + Y</span>持续 0.5 秒<i>↑ 6 米，→ 3 米，仅 U2</i></li>
+      </ul>
+    </div>
+
+    <div class="evidence two">
+      <figure class="shot" data-ui>
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/gc-dance-960.avif 960w, assets/img/opt/gc-dance-1440.avif 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <source type="image/webp" srcset="assets/img/opt/gc-dance-960.webp 960w, assets/img/opt/gc-dance-1440.webp 1440w" sizes="(max-width:760px) 92vw, 46vw">
+          <img src="assets/img/opt/gc-dance-960.jpg" alt="G1 集群控制器桌面端：左侧机器人在线，中间是舞蹈运控命令表，右侧是控制与队列" width="1915" height="917" loading="lazy">
+        </picture>
+        <figcaption>桌面端：左边是机器人在线状态，中间是这张命令表，右边是队列和两个一键按钮。</figcaption>
+      </figure>
+      <figure class="shot shot-phone" data-ui>
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/gc-phone-480.avif 480w, assets/img/opt/gc-phone-960.avif 960w" sizes="(max-width:760px) 60vw, 20vw">
+          <source type="image/webp" srcset="assets/img/opt/gc-phone-480.webp 480w, assets/img/opt/gc-phone-960.webp 960w" sizes="(max-width:760px) 60vw, 20vw">
+          <img src="assets/img/opt/gc-phone-960.jpg" alt="手机上的集群控制器：同一张命令表，勾选后下发" width="1156" height="2510" loading="lazy">
+        </picture>
+        <figcaption>手机端：现场没有电脑，也能改命令、排队列。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= 三 · 交付 · 一步比一步往右 ================= -->
+  <section class="stair" id="deliver" aria-labelledby="deliver-title">
+    <h2 class="stair-title" id="deliver-title">我们卖的不是机器人</h2>
+    <p class="stair-lead">硬件是宇树的。让它在你场地上真的跑起来，是下面四件事。</p>
+
+    <ol class="steps">
+      <li class="step s1">
+        <p class="step-line">先去场地走一遍。</p>
+        <p class="step-note">地面、光线、网络、人流、充电位，哪一项都能决定它跑不跑得通。勘察完才谈方案。</p>
+      </li>
+      <li class="step s2">
+        <p class="step-line">再让机器人建图。</p>
+        <p class="step-note">建图用本体雷达，不依赖外网；边走边出图，走偏了当场能看见，走歪的墙线事后能修掉。</p>
+      </li>
+      <li class="step s3">
+        <p class="step-line">路线在真地图上排。</p>
+        <p class="step-note">站点顺序、每站朝向、每站讲什么，都在场馆自己的后台改；保存后下一次带路就是新内容。</p>
+      </li>
+      <li class="step s4">
+        <p class="step-line">真机跑通，再交接。</p>
+        <p class="step-note">到站、讲解、被客人打断、回到路线。教两个人：开机、改方案、急停。</p>
+      </li>
+    </ol>
+
+    <p class="handover">
+      交接时交到你手上的：地图文件与站点标注 · 讲解词与导览方案 · 后台账号与操作手册 · 两个人各一次上手培训。
+    </p>
+  </section>
+
+  <!-- ================= 四 · 数字 · 一整块纸色 ================= -->
+  <section class="paper-band" aria-labelledby="figs-title">
+    <div class="pb-inner">
+      <h2 class="pb-title" id="figs-title">跑出来的数</h2>
+      <dl class="figs">
+        <div class="fig"><dt>台导览设备</dt><dd class="nums">7</dd></div>
+        <div class="fig"><dt>个客户</dt><dd class="nums">3</dd></div>
+        <div class="fig"><dt>套群控</dt><dd class="nums">3</dd></div>
+        <div class="fig"><dt>米直线，3 个站点</dt><dd class="nums">24</dd></div>
+      </dl>
+      <p class="pb-note">上面每一个数字都来自已经跑起来的现场，不是估算。</p>
+    </div>
+  </section>
+
+  <!-- ================= 五 · 培训 · 宽照片 + 色块里的真路线 ================= -->
+  <section class="course" id="course" aria-labelledby="course-title">
+    <div class="course-head">
+      <h2 class="sec-title" id="course-title">两天，<br>教会你们自己的老师</h2>
+      <p class="course-lead">不是听讲式科普。两天 12 学时，约 75% 在真机上：20 到 24 人分 4 组轮换，G1 EDU 两台（23 与 29 自由度各一）、GO2 EDU 两台。</p>
+    </div>
+
+    <div class="course-stage">
+      <figure class="course-photo">
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/course-480.avif 480w, assets/img/opt/course-960.avif 960w, assets/img/opt/course-1440.avif 1440w" sizes="(max-width:760px) 92vw, 52vw">
+          <source type="image/webp" srcset="assets/img/opt/course-480.webp 480w, assets/img/opt/course-960.webp 960w, assets/img/opt/course-1440.webp 1440w" sizes="(max-width:760px) 92vw, 52vw">
+          <img src="assets/img/opt/course-960.jpg" alt="实验室通道里，G1 站在地上，旁边是操作与拍摄设备" width="1400" height="1166" loading="lazy">
+        </picture>
+        <div class="photo-note">
+          <p>2 台 G1 加 2 台 GO2，4 组轮换，一台一台真机上手。顺序不颠倒：先用 GO2 建立手感，再上人形，先过安全规程。</p>
         </div>
-        <div class="faq-a" id="a3" role="tabpanel" aria-labelledby="q3" tabindex="0" hidden>
-          <p>建图与定位跑在本体上，不依赖外网；讲解走本地语音服务。断网能继续带路，讲解功能会受限，具体以现场测试为准。这也是我们要先勘察的原因。</p>
-        </div>
-        <div class="faq-a" id="a4" role="tabpanel" aria-labelledby="q4" tabindex="0" hidden>
-          <p>能。这是我们和只卖硬件最大的区别：场馆自己的后台上改站点、改讲解词，保存后立刻生效，语音下一次读的就是新内容，不用找我们。</p>
-        </div>
-        <div class="faq-a" id="a5" role="tabpanel" aria-labelledby="q5" tabindex="0" hidden>
-          <p>交付含 3 个月维保：远程看日志当天响应，到场时间按距离在合同里约定。设备本身是校方或你自己的资产，损坏责任划分我们建议写在合同里。</p>
-        </div>
+      </figure>
+
+      <aside class="route-tile">
+        <p class="route-cap">课程就在这条线上排：学院楼 3 个站点，直线 24 米。</p>
+        <svg class="route" viewBox="0 0 200 150" role="img" aria-label="学院楼平面示意：209 实验室到 210 实验室 11 米，再到电梯口 13 米，三站直线合计 24 米">
+          <path class="route-floor" d="M14 96 L14 34 L118 34 L118 62 L186 62 L186 128 L14 128 Z"></path>
+          <path class="route-line" d="M46 108 L96 108 L96 74 L150 74"></path>
+          <circle class="route-dot" cx="46" cy="108" r="6"></circle>
+          <circle class="route-dot" cx="96" cy="74" r="6"></circle>
+          <circle class="route-dot" cx="150" cy="74" r="6"></circle>
+        </svg>
+        <dl class="course-facts">
+          <div><dt>学时</dt><dd class="nums">12</dd></div>
+          <div><dt>人数</dt><dd class="nums">20–24</dd></div>
+          <div><dt>设备</dt><dd class="nums">2 + 2</dd></div>
+          <div><dt>分组</dt><dd class="nums">4</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <div class="course-goals">
+      <p class="goals-head">课程结束时能现场验收的七件事</p>
+      <ol class="goals-line">
+        <li>跑通 SDK 与 DDS 通信</li>
+        <li>调用高层接口，让 GO2 走方形回原点</li>
+        <li>从机器人状态里数出真实关节数</li>
+        <li>在安全规程下完成起身站立与行走</li>
+        <li>让单个关节小幅受控摆动</li>
+        <li>同一套代码先仿真、后真机</li>
+        <li>两人一组完成 GO2 巡航与 G1 迎宾</li>
+      </ol>
+      <p class="course-cta">
+        <a class="btn btn-primary" href="#contact">约一次开班</a>
+        <span class="cta-note">也可以我们来你们学校，设备我们带。</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 六 · 名字 · 一栏一栏排 ================= -->
+  <section class="roll" id="proof" aria-labelledby="proof-title">
+    <h2 class="roll-title" id="proof-title">现场的名字</h2>
+    <div class="roll-cols">
+      <div class="roll-col">
+        <p class="roll-kind">场地</p>
+        <p>学院楼 209 实验室</p>
+        <p>学院楼 210 实验室</p>
+        <p>学院楼电梯口</p>
+        <p>深圳某高校</p>
+        <p>某科技馆展厅</p>
+      </div>
+      <div class="roll-col">
+        <p class="roll-kind">项目</p>
+        <p>场馆导览 · 7 台</p>
+        <p>多机群控 · 3 套</p>
+        <p>拉丁舞 · 动作定制</p>
+        <p>指挥家 · 演出动作</p>
+        <p>师资培训 · 两天 12 学时</p>
+      </div>
+      <div class="roll-col">
+        <p class="roll-kind">状态</p>
+        <p>在跑</p>
+        <p>在跑</p>
+        <p>调试中</p>
+        <p>已交付</p>
+        <p>已开班</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ 7 · 收口 ============ -->
-  <section class="contact" id="contact" aria-labelledby="contact-title">
-    <img class="contact-bg" src="assets/img/bg-contact.jpg" alt="展厅入口，G1 站在通道尽头" width="1600" height="1482" loading="lazy">
-    <div class="contact-card reveal">
-      <h2 class="card-title" id="contact-title">说清你这块地</h2>
-      <p class="card-sub">深圳 · 坪山</p>
-
-      <form class="ask" id="ask-form">
-        <label class="field">
-          <span class="field-label">怎么称呼</span>
-          <input type="text" name="who" autocomplete="name" placeholder="姓 + 单位">
-        </label>
-        <label class="field">
-          <span class="field-label">场地类型</span>
-          <select name="venue">
-            <option>科技馆 · 展厅</option>
-            <option>学校 · 实验室</option>
-            <option>园区 · 前台</option>
-            <option>商演 · 活动</option>
-            <option>自带本体 · 只买软件</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">大概什么时候要</span>
-          <select name="when">
-            <option>一个月内</option>
-            <option>本季度</option>
-            <option>年底前</option>
-            <option>先了解一下</option>
-          </select>
-        </label>
-        <label class="field">
-          <span class="field-label">联系方式</span>
-          <input type="text" name="contact" autocomplete="tel" placeholder="微信或手机">
-        </label>
-        <p class="field-hint" id="ask-hint">填完点下面的按钮，四条信息会复制到剪贴板，直接粘到微信发我。</p>
-        <button class="btn btn-primary btn-wide" type="submit">复制需求，发我微信</button>
-      </form>
-
-      <div class="qr">
-        <div class="qr-box" aria-label="微信二维码占位">
-          <span>微信二维码<br>待替换</span>
-        </div>
-        <p class="qr-note">也可以直接扫码，把场地照片发过来。<br>工作时间内 30 分钟内回一条。</p>
-      </div>
+  <!-- ================= 七 · 问答 · 就是读的正文 ================= -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <h2 class="roll-title" id="faq-title">你可能想问的</h2>
+    <div class="faq-cols">
+      <p><b>机器人是我买还是你们带？</b>两种都行。你自己买本体，我们做落地，按项目算；也可以连本体一起配齐。具体范围按你的场地定。</p>
+      <p><b>场地还没建好，能先做吗？</b>能。先做勘察和建图，等场地成型再定站点。最怕的是装修完才叫我们，那时候点位全得重来。</p>
+      <p><b>多久能上线？</b>标准场馆大约两到三周：勘察与建图一周，点位、讲解词和联调一周，现场交接两三天。演出类按出片周期算，通常三到四周。</p>
+      <p><b>人多、断网、光线差，还稳吗？</b>建图与定位跑在本体上，不依赖外网；讲解走本地语音服务。断网能继续带路，讲解功能会受限，具体以现场测试为准。这也是我们要先勘察的原因。</p>
+      <p><b>以后改讲解词、加站点，我自己能改吗？</b>能。场馆自己的后台改站点、改讲解词，保存后立刻生效，语音下一次读的就是新内容，不用找我们。</p>
+      <p><b>群控最多能带几台？</b>一套群控服务带多台，机器人在界面上勾选，队列一次下发。实际台数受现场无线环境限制，勘察时测过再定。</p>
+      <p><b>舞蹈能换成我们自己的曲子吗？</b>可以，动作是按按键与时间排的，节拍对得上就能改；对不上要先改编排，这部分按项目算。</p>
+      <p><b>培训能到我们学校办吗？</b>能，设备我们带过去。两天的课需要一间能放下两台 G1 行走的场地，走廊也行。</p>
+      <p><b>出了问题谁负责，多久到场？</b>交付含三个月维保：远程看日志当天响应，到场时间按距离在合同里约定。设备本身是校方或你自己的资产，损坏责任划分建议写进合同。</p>
+      <p><b>你们在哪，能来现场吗？</b>深圳坪山。珠三角当天能到；外省按项目排期，勘察与交接各去一次。</p>
     </div>
+  </section>
+
+  <!-- ================= 八 · 联系 · 一句话 + 一张卡 ================= -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact-say">
+      <picture class="contact-pic">
+        <source type="image/avif" srcset="assets/img/opt/contact-480.avif 480w, assets/img/opt/contact-960.avif 960w" sizes="170px">
+        <source type="image/webp" srcset="assets/img/opt/contact-480.webp 480w, assets/img/opt/contact-960.webp 960w" sizes="170px">
+        <img src="assets/img/opt/contact-960.jpg" alt="展厅入口，一台 G1 站在通道尽头" width="1600" height="1482" loading="lazy">
+      </picture>
+      <h2 class="contact-title" id="contact-title">说清你这块地，我给你一份排法</h2>
+      <p class="contact-sub">不报价，先算清楚要做什么：几台、几个站点、多久上线、交付含什么。</p>
+    </div>
+
+    <form class="ask" id="ask-form" novalidate>
+      <label class="field">
+        <span class="field-label">怎么称呼</span>
+        <input type="text" name="who" autocomplete="name" placeholder="姓 + 单位">
+      </label>
+      <label class="field">
+        <span class="field-label">场地类型</span>
+        <select name="venue">
+          <option>科技馆 · 展厅</option>
+          <option>学校 · 实验室</option>
+          <option>园区 · 前台</option>
+          <option>商演 · 活动</option>
+          <option>自带本体 · 只买软件</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">大概什么时候要</span>
+        <select name="when">
+          <option>一个月内</option>
+          <option>本季度</option>
+          <option>年底前</option>
+          <option>先了解一下</option>
+        </select>
+      </label>
+      <label class="field">
+        <span class="field-label">联系方式</span>
+        <input type="text" name="contact" autocomplete="tel" placeholder="微信或手机">
+      </label>
+      <button class="btn btn-primary btn-wide" type="submit">复制需求文本</button>
+      <p class="ask-hint" id="ask-hint">填完点按钮，四个字段会变成一段话复制到剪贴板，直接粘到微信发给我们。深圳坪山，工作时间内三十分钟回一条。</p>
+    </form>
   </section>
 
 </main>
 
 <footer class="foot">
   <p class="foot-name">落地组</p>
-  <p class="foot-line">宇树 G1 / GO2 的二次开发与落地交付 · 场馆导览 · 舞台动作 · 多机同步 · 师资培训</p>
+  <p class="foot-line">宇树 G1 / GO2 的二次开发与落地交付 · 场馆导览 · 舞台动作 · 多机群控 · 师资培训</p>
   <div class="foot-cols">
-    <p>已交付：导览 7 台 / 3 个客户<br>群控 3 套 / 3 个客户<br>培训：两天 12 学时实操</p>
-    <p>联系：微信二维码见上方<br>邮箱与电话待补<br>备案号待补</p>
+    <p>已交付：导览 7 台 / 3 个客户<br>群控 3 套 / 3 个客户<br>培训：两天 12 学时，约 75% 在真机上</p>
+    <p>现场：学院楼 209、210 与电梯口，3 站 24 米<br>深圳坪山，珠三角当天能到<br>维保：三个月，远程当天响应</p>
   </div>
 </footer>
 

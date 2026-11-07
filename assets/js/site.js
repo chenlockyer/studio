@@ -15,8 +15,7 @@
     '.media-wide', '.chain-video', '.steps4 .step', '.facts3 .fact',
     '.cmd', '.tagrow',
     '.steps-d .dstep', '.handover', '.paper .fig',
-    '.course-spec', '.goals-k', '.goals-list li', '.caution',
-    '.faq-item', '.faq-aside',
+    '.course-spec', '.goals', '.goals-k', '.goals-list li', '.caution',
     '.contact-say > *', '.contact-qr',
   ];
   const targets = [];
@@ -73,16 +72,7 @@
     }
   }
 
-  /* ---------------- 3 · 问答：同组只开一个 ---------------- */
-  const faqItems = $$('.faq-item');
-  faqItems.forEach((d) => {
-    d.addEventListener('toggle', () => {
-      if (!d.open) return;
-      faqItems.forEach((o) => { if (o !== d) o.open = false; });
-    });
-  });
-
-  /* ---------------- 4 · 微信二维码弹层 ---------------- */
+  /* ---------------- 3 · 微信二维码弹层 ---------------- */
   const wxDialog = document.getElementById('wx-dialog');
   if (wxDialog && typeof wxDialog.showModal === 'function') {
     // 没有弹层能力的环境下，这些 <a> 会退化成直接打开二维码图片 —— 不拦截
@@ -101,8 +91,8 @@
     });
   }
 
-  /* ---------------- 5 · 控件按下反馈 ---------------- */
-  $$('.btn, .faq-item summary').forEach((el) => {
+  /* ---------------- 4 · 控件按下反馈 ---------------- */
+  $$('.btn').forEach((el) => {
     el.addEventListener('pointerdown', () => el.classList.add('is-press'));
     for (const ev of ['pointerup', 'pointercancel', 'pointerleave']) {
       el.addEventListener(ev, () => el.classList.remove('is-press'));

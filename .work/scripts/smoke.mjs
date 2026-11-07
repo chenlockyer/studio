@@ -66,15 +66,6 @@ out.videos = await ev(`(async () => {
   return vs.map(v => ({ src: v.currentSrc.split('/').pop(), ready: v.readyState, w: v.videoWidth, paused: v.paused }));
 })()`);
 
-out.faq = await ev(`(() => {
-  const items = [...document.querySelectorAll('.faq-item')];
-  const a = items[0], b = items[1];
-  b.open = true; b.dispatchEvent(new Event('toggle'));
-  const onlyOne = !a.open && b.open;
-  const hiddenOk = getComputedStyle(a.querySelector('p')).display === 'none';
-  return { count: items.length, onlyOne, hiddenOk };
-})()`);
-
 // 没有表单了：验证联系区二维码 + 弹层 + 「加微信」CTA 的渐进增强
 out.contact = await ev(`(async () => {
   const fig = document.querySelector('.contact-qr img');

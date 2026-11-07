@@ -532,6 +532,10 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.6;
   color: var(--soft);
 }
+.goals-list b {
+  color: var(--ink);          /* 课程安排里的日期标签 —— 深色底上必须用 ink，不是 paper-ink */
+  font-weight: 700;
+}
 .goals-list li::before {
   content: "";
   position: absolute;
@@ -548,70 +552,6 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   gap: 0.85rem 1.5rem;
   margin-top: clamp(1.75rem, 3.5vw, 2.5rem);
-}
-.caution-note { font-size: var(--t-base); color: var(--soft); }
-
-/* ================================================================
-   问答
-   ================================================================ */
-.faq-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 21rem;
-  gap: clamp(1.75rem, 4vw, 4rem);
-  align-items: start;
-}
-.faq-aside {
-  display: grid;
-  gap: 0.9rem;
-  justify-items: start;
-  padding: clamp(1.25rem, 2.4vw, 2rem);
-  background: var(--panel);
-  position: sticky;
-  top: 6rem;
-}
-.faq-aside-k { font-size: var(--t-md); font-weight: 700; line-height: 1.4; }
-.faq-aside-d { font-size: var(--t-base); line-height: 1.65; color: var(--soft); }
-.faq-aside-meta { font-size: var(--t-sm); color: var(--soft); }
-.faq-list { display: grid; gap: 2px; }
-.faq-item[open] { background: var(--ground); }
-.faq-item summary {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.1rem clamp(1rem, 1.6vw, 1.35rem);
-  font-size: var(--t-md);
-  font-weight: 700;
-  line-height: 1.45;
-  cursor: pointer;
-  list-style: none;
-  transition: color var(--d-hover) linear, background-color var(--d-hover) linear;
-}
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after {
-  content: "";
-  margin-left: auto;
-  flex: 0 0 auto;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-right: 2px solid var(--soft);
-  border-bottom: 2px solid var(--soft);
-  transform: rotate(45deg) translateY(-0.12rem);
-  transition: transform var(--d-ui) var(--ease), border-color var(--d-hover) linear;
-}
-.faq-item summary:hover { color: var(--led-hot); background: var(--panel); }
-.faq-item summary:hover::after { border-color: var(--led-hot); }
-.faq-item[open] summary { background: var(--panel); }
-.faq-item[open] summary::after {
-  transform: rotate(-135deg) translateY(-0.12rem);
-  border-color: var(--led-hot);
-}
-.faq-item:not([open]) > p { display: none; }
-.faq-item p {
-  padding: 0 clamp(1rem, 1.6vw, 1.35rem) 1.4rem;
-  font-size: var(--t-base);
-  line-height: 1.75;
-  color: var(--soft);
-  max-width: 66ch;
 }
 
 /* ================================================================
@@ -797,10 +737,6 @@ a { color: inherit; text-decoration: none; }
   .goals { grid-template-columns: 1fr; }
   .goals-list { grid-template-columns: 1fr; }
 
-  .faq-grid { grid-template-columns: 1fr; }
-  .faq-aside { position: static; }
-  .faq-item summary { font-size: var(--t-base); padding: 0.95rem 1rem; }
-  .faq-item p { padding: 0 1rem 1.2rem; }
 
   .foot-cols { grid-template-columns: 1fr; }
 }

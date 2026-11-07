@@ -1,10 +1,8 @@
-preview/
+﻿preview/
 .taste-skill/
 
 # 构建过程中的中间产物（脚本可复现，不入库）
-.work/cdpprof/
-.work/cdpprof2/
-.work/cdpprof3/
+.work/cdpprof*/
 .work/chromeprof/
 .work/fonts/
 .work/media-v3/

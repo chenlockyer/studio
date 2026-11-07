@@ -25,12 +25,13 @@ python -m http.server 8811
 index.html                 单页正文（25.8 KB，无内联样式）
 assets/css/site.css        全部样式（26 KB；颜色/字号/间距统一走 :root token）
 assets/js/site.js          交互增强（5 KB；关掉脚本页面依然完整可用）
-assets/fonts/              3 个按页面用字子集化的 woff2（共 265 KB）
+assets/fonts/              3 个按页面用字子集化的 woff2（共 257 KB；语料直接取自 index.html，改文案后需重建）
                              smiley-display  标题（得意黑，中文展示体）
                              noto-400/700    正文与数字（包含拉丁与数字字形）
 assets/video/              4 段真实现场视频（共 2.27 MB，H.264 / 无音轨 / faststart）
 assets/img/poster/         4 张视频封面（与视频首帧严格同帧，不会跳帧）
 assets/img/ui/             4 张软件界面截图的 AVIF/WebP/JPG 响应式阶梯
+assets/img/wechat-qr.png   微信二维码 720×720（从名片截图裁出，已去掉头像与昵称）
 assets/img/og.jpg          社交分享图（1200×675）
 assets/favicon.svg         站点图标
 ```
@@ -46,15 +47,28 @@ assets/favicon.svg         站点图标
 | `#deliver` | 交付流程 | 四步交付 + 交付清单；紧接白底「交付实绩」数字带 |
 | `#course` | 师资培训 | 2 天 12 学时规格条 + 七项结业验收 |
 | `#faq` | 常见问题 | 10 条真实问答（`<details>`，单开互斥） |
-| `#contact` | 联系 | 四项表单，一键合成一段话复制到剪贴板 |
+| `#contact` | 联系 | 微信扫码入口 + 四项表单，一键合成一段话复制到剪贴板 |
+
+## 交互
+
+| 动作 | 行为 |
+|---|---|
+| 点任意「获取方案 / 说清你的场地 / 预约开班」 | 弹微信二维码（原生 `<dialog>`；ESC 或点遮罩关闭） |
+| 关闭 JS | 上面的按钮退化成直接打开 `wechat-qr.png`，页面其余部分完整可用 |
+| 填完四项点「复制需求」 | 合成一段话写进剪贴板；`file://` 或无剪贴板权限时改为展开可全选的文本框 |
+| 常见问题 | `<details>` 单开互斥 |
+| 入场动画 | `IntersectionObserver`，`prefers-reduced-motion` 下自动关闭 |
+| 视频 | 全部 `muted playsinline loop autoplay preload=metadata`，`prefers-reduced-motion` 下只显示封面 |
 
 ## 需要你补的占位
 
 | 位置 | 现在 | 换成什么 |
 |---|---|---|
 | 页脚 | 没有电话 / 邮箱 / 备案号 | 补真实联系方式与备案号 |
+| 微信二维码 | `assets/img/wechat-qr.png`，从 `C:/Users/11051/Pictures/个人信息/微信二维码.png` 裁出 | 换微信号后重跑 `.work/scripts/make_qr.py`（源图丢进同路径即可） |
 | 品牌名「落地组」 | 临时 wordmark（`index.html` 内 6 处 + `<title>`/OG） | 定名后全局替换 |
 | 客户名 | 「深圳某高校」 | 客户同意后换真名，否则保留匿名但具体的写法 |
+| 交付范围 | 全站写「全球交付」 | 如果只做国内或只做珠三角，把 `.wm-sub` / FAQ 最后一条 / 页脚「现场」列改回去 |
 | 案例数据 | 7 台 / 3 客户 / 3 套 / 24 米 | 有新交付时同步更新首屏与「交付实绩」两处 |
 
 ## 素材来源

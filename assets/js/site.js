@@ -127,6 +127,25 @@
     });
   }
 
+  /* ---------------- 6 · 微信二维码弹层 ---------------- */
+  const wxDialog = document.getElementById('wx-dialog');
+  if (wxDialog && typeof wxDialog.showModal === 'function') {
+    // 没有弹层能力的环境下，这些 <a> 会退化成直接打开二维码图片 —— 不拦截
+    $$('[data-wx]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        wxDialog.showModal();
+        wxDialog.focus();          // 焦点落在弹层本身，关闭按钮的焦点环只在键盘 Tab 时出现
+      });
+    });
+    wxDialog.addEventListener('click', (e) => {
+      if (e.target === wxDialog) wxDialog.close();   // 点遮罩关闭
+    });
+    $$('[data-wx-close]').forEach((a) => {
+      a.addEventListener('click', () => wxDialog.close());
+    });
+  }
+
   /* ---------------- 5 · 控件按下反馈 ---------------- */
   $$('.btn, .faq-item summary').forEach((el) => {
     el.addEventListener('pointerdown', () => el.classList.add('is-press'));

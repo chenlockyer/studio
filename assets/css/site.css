@@ -855,3 +855,98 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.6;
   resize: vertical;
 }
+
+/* ================================================================
+   微信二维码弹层
+   ================================================================ */
+.wx {
+  width: min(92vw, 27rem);
+  max-width: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--paper-ink);
+}
+.wx:focus { outline: none; }
+.wx::backdrop {
+  background: rgba(4, 6, 8, 0.84);
+  backdrop-filter: blur(6px);
+}
+.wx-card {
+  position: relative;
+  padding: clamp(1.5rem, 4vw, 2rem) clamp(1.25rem, 3.5vw, 1.75rem) clamp(1.25rem, 3.5vw, 1.6rem);
+  background: var(--paper);
+  text-align: center;
+}
+.wx-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--paper-soft);
+  cursor: pointer;
+}
+.wx-close:hover { color: var(--paper-ink); }
+.wx-close:focus-visible {
+  outline: 2px solid var(--led);
+  outline-offset: -6px;
+  border-radius: 2px;
+  color: var(--paper-ink);
+}
+.wx-k {
+  font-size: var(--t-sm);
+  letter-spacing: 0.1em;
+  color: var(--paper-soft);
+}
+.wx-title {
+  margin-top: 0.5rem;
+  font-family: var(--font-display);
+  font-size: var(--t-lg);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.wx-qr {
+  width: min(56vw, 13.5rem);
+  margin: 1.25rem auto 0;
+  aspect-ratio: 1;
+  background: #fff;
+}
+.wx-qr img { display: block; width: 100%; height: 100%; }
+.wx-hint {
+  margin-top: 1rem;
+  font-size: var(--t-sm);
+  line-height: 1.6;
+  color: var(--paper-soft);
+}
+.wx-alt {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: var(--t-sm);
+  color: #0a5f8a;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+/* 联系区里的扫码入口 */
+.contact-wx {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-top: clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.7rem 1rem;
+  border-left: 3px solid var(--led);
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background var(--d-hover) var(--ease);
+}
+.contact-wx:hover { background: var(--panel-2); }
+.contact-wx-k { font-size: var(--t-sm); color: var(--led); letter-spacing: 0.08em; }
+.contact-wx-d { font-size: var(--t-base); }

@@ -1,0 +1,17 @@
+﻿import io,sys
+sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding="utf-8",errors="replace")
+gi = """preview/
+.taste-skill/
+
+# .work 是本地工作区：只入库可复现的工具脚本，和不可再生的原始界面截图
+.work/*
+!.work/scripts/
+!.work/source-img/
+
+# 部署产物与工具
+dist/
+.wrangler/
+node_modules/
+"""
+open(".gitignore","w",encoding="utf-8",newline="\n").write(gi)
+print(gi)

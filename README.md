@@ -1,7 +1,9 @@
-# 落地组 · 宇树 G1 落地交付官网
+# 宇树机器人实验室 · 宇树 G1 落地交付官网
 
 纯静态单页：`index.html` + `assets/`，**没有构建步骤、没有依赖、没有外链 CDN**。
 双击 `index.html` 就能看，放到任意静态服务器（Nginx / OSS / GitHub Pages）也一样。
+
+**线上地址：<https://chenlockyer.github.io/studio/>**（GitHub Pages，推 `main` 即发布）
 
 ---
 
@@ -34,6 +36,10 @@ assets/img/ui/             4 张软件界面截图的 AVIF/WebP/JPG 响应式阶
 assets/img/wechat-qr.png   微信二维码 720×720（从名片截图裁出，已去掉头像与昵称）
 assets/img/og.jpg          社交分享图（1200×675）
 assets/favicon.svg         站点图标
+robots.txt                 允许全站抓取
+404.html                   404 页（GitHub Pages 项目站在 /studio/ 子路径下，用绝对地址回首页）
+DEPLOY.md                  三条正式托管路线与各自的前置条件
+.nojekyll                  关掉 GitHub Pages 的 Jekyll 处理
 ```
 
 ## 页面结构
@@ -48,6 +54,23 @@ assets/favicon.svg         站点图标
 | `#course` | 师资培训 | 2 天 12 学时规格条 + 七项结业验收 |
 | `#faq` | 常见问题 | 10 条真实问答（`<details>`，单开互斥） |
 | `#contact` | 联系 | 微信扫码入口 + 四项表单，一键合成一段话复制到剪贴板 |
+
+## 上线（GitHub Pages）
+
+线上仓库：`github.com/chenlockyer/studio`，Pages 从 `main` 分支根目录发布，站点在 `/studio/` 子路径下。
+
+```bash
+cd D:/code/unitree-site
+git add -A && git commit -m "改动说明"
+# 本地分支叫 master，远端叫 main，历史不相关 → 用 commit-tree 造一个以 origin/main 为父的快进提交
+tree=$(git rev-parse "master^{tree}")
+new=$(git commit-tree $tree -p origin/main -F <(echo "改动说明"))
+git update-ref refs/heads/deploy-gh $new
+git push origin deploy-gh:main
+```
+
+推完约 10–60 秒 GitHub Pages 自动重建，刷新 <https://chenlockyer.github.io/studio/> 即见新版。
+**改文案后必须重建字体子集**（`python .work/scripts/fonts_v4.py`），否则新字会回退到系统字体——这个 bug 不报错，只能肉眼看出（「绩」字就是这么漏的）。
 
 ## 交互
 

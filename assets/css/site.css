@@ -373,7 +373,7 @@ a { color: inherit; text-decoration: none; }
    ================================================================ */
 .group-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 20rem);
   gap: clamp(1rem, 2.5vw, 2.25rem);
   align-items: start;
 }
@@ -805,7 +805,42 @@ a { color: inherit; text-decoration: none; }
   .foot-cols { grid-template-columns: 1fr; }
 }
 
-/* ---------- 动作区块：竖版真机视频 + 右侧四步（与导览的宽幅视频区分构图）---------- */
+/* ---------- 导览区块：竖版真机视频在右，四步在左（与动作区块左右镜像）---------- */
+.navi-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 22rem);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+.navi-left {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+  align-content: start;
+}
+.navi-left .steps4 { margin-bottom: 0; }
+.navi-video > video {
+  display: block;
+  width: 100%;
+  height: auto;          /* 必须写：<video width height> 属性会把高度钉死，aspect-ratio 就失效了 */
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  background: var(--panel);
+}
+.navi-video figcaption {
+  margin-top: 0.7rem;
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--soft);
+}
+@media (max-width: 900px) {
+  .navi-grid { grid-template-columns: 1fr; }
+  .navi-video { max-width: 19rem; order: -1; }
+}
+@media (max-width: 620px) {
+  .navi-video { max-width: 15rem; }
+}
+
+/* ---------- 动作区块：竖版真机视频在左，四步在右（与导览左右镜像）---------- */
 .chain-grid {
   display: grid;
   grid-template-columns: minmax(0, 21rem) minmax(0, 1fr);

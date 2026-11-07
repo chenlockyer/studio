@@ -91,6 +91,9 @@ for (const t of targets) {
   y = Math.max(0, y - 0);
   await evalJS(`window.scrollTo(0, ${y}); new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))`);
   await sleep(700);
+  // 强制落定入场动画，避免截图卡在渐变中间（布局验证用）
+  await evalJS(`document.querySelectorAll('.rv').forEach(e => e.classList.add('is-in'))`);
+  await sleep(450);
   const shot = await S("Page.captureScreenshot", { format: "png", captureBeyondViewport: false });
   const file = `${outdir}\\${name}.png`;
   writeFileSync(file, Buffer.from(shot.result.data, "base64"));

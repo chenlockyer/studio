@@ -51,9 +51,8 @@ DEPLOY.md                  三条正式托管路线与各自的前置条件
 | `#group` | 多机群控 | 多台 G1 同步执行的现场 + 真实手柄指令表 + 三条安全事实 |
 | `#chain` | 动作定制 | 真机跳舞竖版视频 + 从人体数据到真机的四道验证 |
 | `#deliver` | 交付流程 | 四步交付 + 交付清单；紧接白底「交付实绩」数字带 |
-| `#course` | 师资培训 | 2 天 12 学时规格条 + 七项结业验收 |
-| `#faq` | 常见问题 | 10 条真实问答（`<details>`，单开互斥） |
-| `#contact` | 联系 | 微信扫码入口 + 四项表单，一键合成一段话复制到剪贴板 |
+| `#course` | 线下教培 | 具身智能实战课程：2 天 12 学时规格条 + 课程安排 + 七项结业验收 |
+| `#contact` | 联系 | 微信二维码 + 「加微信，把场地照片和尺寸发过来」 |
 
 ## 上线（GitHub Pages）
 
@@ -79,7 +78,6 @@ git push origin deploy-gh:main
 | 点任意「获取方案 / 说清你的场地 / 预约开班」 | 弹微信二维码（原生 `<dialog>`；ESC 或点遮罩关闭） |
 | 关闭 JS | 上面的按钮退化成直接打开 `wechat-qr.png`，页面其余部分完整可用 |
 | 填完四项点「复制需求」 | 合成一段话写进剪贴板；`file://` 或无剪贴板权限时改为展开可全选的文本框 |
-| 常见问题 | `<details>` 单开互斥 |
 | 入场动画 | `IntersectionObserver`，`prefers-reduced-motion` 下自动关闭 |
 | 视频 | 全部 `muted playsinline loop autoplay preload=metadata`，`prefers-reduced-motion` 下只显示封面 |
 
@@ -91,7 +89,7 @@ git push origin deploy-gh:main
 | 微信二维码 | `assets/img/wechat-qr.png`，从 `C:/Users/11051/Pictures/个人信息/微信二维码.png` 裁出 | 换微信号后重跑 `.work/scripts/make_qr.py`（源图丢进同路径即可） |
 | 品牌名「落地组」 | 临时 wordmark（`index.html` 内 6 处 + `<title>`/OG） | 定名后全局替换 |
 | 客户名 | 「深圳某高校」 | 客户同意后换真名，否则保留匿名但具体的写法 |
-| 交付范围 | 全站写「全球交付」 | 如果只做国内或只做珠三角，把 `.wm-sub` / FAQ 最后一条 / 页脚「现场」列改回去 |
+| 交付范围 | 全站写「全球交付」 | 如果只做国内或只做珠三角，把 `.wm-sub` / 页脚「现场」列改回去 |
 | 案例数据 | 7 台 / 3 客户 / 3 套 / 24 米 | 有新交付时同步更新首屏与「交付实绩」两处 |
 
 ## 素材来源

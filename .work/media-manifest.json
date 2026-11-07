@@ -1,0 +1,997 @@
+{
+ "raster": [
+  {
+   "path": "assets/img/opt/contact-480.avif",
+   "slug": "contact",
+   "format": "avif",
+   "width": 480,
+   "height": 445,
+   "bytes": 4732
+  },
+  {
+   "path": "assets/img/opt/contact-480.webp",
+   "slug": "contact",
+   "format": "webp",
+   "width": 480,
+   "height": 445,
+   "bytes": 6744
+  },
+  {
+   "path": "assets/img/opt/contact-960.avif",
+   "slug": "contact",
+   "format": "avif",
+   "width": 960,
+   "height": 889,
+   "bytes": 18841
+  },
+  {
+   "path": "assets/img/opt/contact-960.webp",
+   "slug": "contact",
+   "format": "webp",
+   "width": 960,
+   "height": 889,
+   "bytes": 24714
+  },
+  {
+   "path": "assets/img/opt/contact-1440.avif",
+   "slug": "contact",
+   "format": "avif",
+   "width": 1440,
+   "height": 1334,
+   "bytes": 39626
+  },
+  {
+   "path": "assets/img/opt/contact-1440.webp",
+   "slug": "contact",
+   "format": "webp",
+   "width": 1440,
+   "height": 1334,
+   "bytes": 47660
+  },
+  {
+   "path": "assets/img/opt/contact-960.jpg",
+   "slug": "contact",
+   "format": "jpg",
+   "width": 960,
+   "height": 889,
+   "bytes": 67403
+  },
+  {
+   "path": "assets/img/opt/course-480.avif",
+   "slug": "course",
+   "format": "avif",
+   "width": 480,
+   "height": 400,
+   "bytes": 8785
+  },
+  {
+   "path": "assets/img/opt/course-480.webp",
+   "slug": "course",
+   "format": "webp",
+   "width": 480,
+   "height": 400,
+   "bytes": 11414
+  },
+  {
+   "path": "assets/img/opt/course-960.avif",
+   "slug": "course",
+   "format": "avif",
+   "width": 960,
+   "height": 800,
+   "bytes": 23615
+  },
+  {
+   "path": "assets/img/opt/course-960.webp",
+   "slug": "course",
+   "format": "webp",
+   "width": 960,
+   "height": 800,
+   "bytes": 28752
+  },
+  {
+   "path": "assets/img/opt/course-960.jpg",
+   "slug": "course",
+   "format": "jpg",
+   "width": 960,
+   "height": 800,
+   "bytes": 68493
+  },
+  {
+   "path": "assets/img/opt/multi-480.avif",
+   "slug": "multi",
+   "format": "avif",
+   "width": 480,
+   "height": 480,
+   "bytes": 12579
+  },
+  {
+   "path": "assets/img/opt/multi-480.webp",
+   "slug": "multi",
+   "format": "webp",
+   "width": 480,
+   "height": 480,
+   "bytes": 16726
+  },
+  {
+   "path": "assets/img/opt/multi-960.avif",
+   "slug": "multi",
+   "format": "avif",
+   "width": 960,
+   "height": 960,
+   "bytes": 35278
+  },
+  {
+   "path": "assets/img/opt/multi-960.webp",
+   "slug": "multi",
+   "format": "webp",
+   "width": 960,
+   "height": 960,
+   "bytes": 43264
+  },
+  {
+   "path": "assets/img/opt/multi-1440.avif",
+   "slug": "multi",
+   "format": "avif",
+   "width": 1440,
+   "height": 1440,
+   "bytes": 58527
+  },
+  {
+   "path": "assets/img/opt/multi-1440.webp",
+   "slug": "multi",
+   "format": "webp",
+   "width": 1440,
+   "height": 1440,
+   "bytes": 73200
+  },
+  {
+   "path": "assets/img/opt/multi-960.jpg",
+   "slug": "multi",
+   "format": "jpg",
+   "width": 960,
+   "height": 960,
+   "bytes": 95039
+  },
+  {
+   "path": "assets/img/opt/stage-480.avif",
+   "slug": "stage",
+   "format": "avif",
+   "width": 480,
+   "height": 480,
+   "bytes": 7684
+  },
+  {
+   "path": "assets/img/opt/stage-480.webp",
+   "slug": "stage",
+   "format": "webp",
+   "width": 480,
+   "height": 480,
+   "bytes": 10508
+  },
+  {
+   "path": "assets/img/opt/stage-960.avif",
+   "slug": "stage",
+   "format": "avif",
+   "width": 960,
+   "height": 960,
+   "bytes": 16907
+  },
+  {
+   "path": "assets/img/opt/stage-960.webp",
+   "slug": "stage",
+   "format": "webp",
+   "width": 960,
+   "height": 960,
+   "bytes": 22244
+  },
+  {
+   "path": "assets/img/opt/stage-960.jpg",
+   "slug": "stage",
+   "format": "jpg",
+   "width": 960,
+   "height": 960,
+   "bytes": 55010
+  },
+  {
+   "path": "assets/img/opt/tour-480.avif",
+   "slug": "tour",
+   "format": "avif",
+   "width": 480,
+   "height": 480,
+   "bytes": 7740
+  },
+  {
+   "path": "assets/img/opt/tour-480.webp",
+   "slug": "tour",
+   "format": "webp",
+   "width": 480,
+   "height": 480,
+   "bytes": 10696
+  },
+  {
+   "path": "assets/img/opt/tour-960.avif",
+   "slug": "tour",
+   "format": "avif",
+   "width": 960,
+   "height": 960,
+   "bytes": 23122
+  },
+  {
+   "path": "assets/img/opt/tour-960.webp",
+   "slug": "tour",
+   "format": "webp",
+   "width": 960,
+   "height": 960,
+   "bytes": 29644
+  },
+  {
+   "path": "assets/img/opt/tour-1440.avif",
+   "slug": "tour",
+   "format": "avif",
+   "width": 1440,
+   "height": 1440,
+   "bytes": 45363
+  },
+  {
+   "path": "assets/img/opt/tour-1440.webp",
+   "slug": "tour",
+   "format": "webp",
+   "width": 1440,
+   "height": 1440,
+   "bytes": 53376
+  },
+  {
+   "path": "assets/img/opt/tour-960.jpg",
+   "slug": "tour",
+   "format": "jpg",
+   "width": 960,
+   "height": 960,
+   "bytes": 75811
+  },
+  {
+   "path": "assets/img/opt/reel1-480.avif",
+   "slug": "reel1",
+   "format": "avif",
+   "width": 480,
+   "height": 600,
+   "bytes": 15020
+  },
+  {
+   "path": "assets/img/opt/reel1-480.webp",
+   "slug": "reel1",
+   "format": "webp",
+   "width": 480,
+   "height": 600,
+   "bytes": 21070
+  },
+  {
+   "path": "assets/img/opt/reel1-960.avif",
+   "slug": "reel1",
+   "format": "avif",
+   "width": 960,
+   "height": 1200,
+   "bytes": 42280
+  },
+  {
+   "path": "assets/img/opt/reel1-960.webp",
+   "slug": "reel1",
+   "format": "webp",
+   "width": 960,
+   "height": 1200,
+   "bytes": 55440
+  },
+  {
+   "path": "assets/img/opt/reel1-960.jpg",
+   "slug": "reel1",
+   "format": "jpg",
+   "width": 960,
+   "height": 1200,
+   "bytes": 117314
+  },
+  {
+   "path": "assets/img/opt/reel2-480.avif",
+   "slug": "reel2",
+   "format": "avif",
+   "width": 480,
+   "height": 600,
+   "bytes": 11535
+  },
+  {
+   "path": "assets/img/opt/reel2-480.webp",
+   "slug": "reel2",
+   "format": "webp",
+   "width": 480,
+   "height": 600,
+   "bytes": 16072
+  },
+  {
+   "path": "assets/img/opt/reel2-960.avif",
+   "slug": "reel2",
+   "format": "avif",
+   "width": 960,
+   "height": 1200,
+   "bytes": 43573
+  },
+  {
+   "path": "assets/img/opt/reel2-960.webp",
+   "slug": "reel2",
+   "format": "webp",
+   "width": 960,
+   "height": 1200,
+   "bytes": 56270
+  },
+  {
+   "path": "assets/img/opt/reel2-960.jpg",
+   "slug": "reel2",
+   "format": "jpg",
+   "width": 960,
+   "height": 1200,
+   "bytes": 121342
+  },
+  {
+   "path": "assets/img/opt/reel3-480.avif",
+   "slug": "reel3",
+   "format": "avif",
+   "width": 480,
+   "height": 600,
+   "bytes": 10200
+  },
+  {
+   "path": "assets/img/opt/reel3-480.webp",
+   "slug": "reel3",
+   "format": "webp",
+   "width": 480,
+   "height": 600,
+   "bytes": 14658
+  },
+  {
+   "path": "assets/img/opt/reel3-960.avif",
+   "slug": "reel3",
+   "format": "avif",
+   "width": 960,
+   "height": 1200,
+   "bytes": 22542
+  },
+  {
+   "path": "assets/img/opt/reel3-960.webp",
+   "slug": "reel3",
+   "format": "webp",
+   "width": 960,
+   "height": 1200,
+   "bytes": 30526
+  },
+  {
+   "path": "assets/img/opt/reel3-960.jpg",
+   "slug": "reel3",
+   "format": "jpg",
+   "width": 960,
+   "height": 1200,
+   "bytes": 72766
+  },
+  {
+   "path": "assets/img/opt/reel4-480.avif",
+   "slug": "reel4",
+   "format": "avif",
+   "width": 480,
+   "height": 600,
+   "bytes": 6416
+  },
+  {
+   "path": "assets/img/opt/reel4-480.webp",
+   "slug": "reel4",
+   "format": "webp",
+   "width": 480,
+   "height": 600,
+   "bytes": 7724
+  },
+  {
+   "path": "assets/img/opt/reel4-960.avif",
+   "slug": "reel4",
+   "format": "avif",
+   "width": 960,
+   "height": 1200,
+   "bytes": 13680
+  },
+  {
+   "path": "assets/img/opt/reel4-960.webp",
+   "slug": "reel4",
+   "format": "webp",
+   "width": 960,
+   "height": 1200,
+   "bytes": 16940
+  },
+  {
+   "path": "assets/img/opt/reel4-960.jpg",
+   "slug": "reel4",
+   "format": "jpg",
+   "width": 960,
+   "height": 1200,
+   "bytes": 46749
+  },
+  {
+   "path": "assets/img/opt/thumb-stage-480.avif",
+   "slug": "thumb-stage",
+   "format": "avif",
+   "width": 480,
+   "height": 320,
+   "bytes": 3879
+  },
+  {
+   "path": "assets/img/opt/thumb-stage-480.webp",
+   "slug": "thumb-stage",
+   "format": "webp",
+   "width": 480,
+   "height": 320,
+   "bytes": 4722
+  },
+  {
+   "path": "assets/img/opt/thumb-stage-960.jpg",
+   "slug": "thumb-stage",
+   "format": "jpg",
+   "width": 720,
+   "height": 480,
+   "bytes": 17809
+  },
+  {
+   "path": "assets/img/opt/thumb-tour-480.avif",
+   "slug": "thumb-tour",
+   "format": "avif",
+   "width": 480,
+   "height": 325,
+   "bytes": 5882
+  },
+  {
+   "path": "assets/img/opt/thumb-tour-480.webp",
+   "slug": "thumb-tour",
+   "format": "webp",
+   "width": 480,
+   "height": 325,
+   "bytes": 7774
+  },
+  {
+   "path": "assets/img/opt/thumb-tour-960.jpg",
+   "slug": "thumb-tour",
+   "format": "jpg",
+   "width": 720,
+   "height": 488,
+   "bytes": 28546
+  },
+  {
+   "path": "assets/img/opt/ui-map-480.avif",
+   "slug": "ui-map",
+   "format": "avif",
+   "width": 480,
+   "height": 208,
+   "bytes": 1638
+  },
+  {
+   "path": "assets/img/opt/ui-map-480.webp",
+   "slug": "ui-map",
+   "format": "webp",
+   "width": 480,
+   "height": 208,
+   "bytes": 1848
+  },
+  {
+   "path": "assets/img/opt/ui-map-960.avif",
+   "slug": "ui-map",
+   "format": "avif",
+   "width": 960,
+   "height": 415,
+   "bytes": 4903
+  },
+  {
+   "path": "assets/img/opt/ui-map-960.webp",
+   "slug": "ui-map",
+   "format": "webp",
+   "width": 960,
+   "height": 415,
+   "bytes": 6974
+  },
+  {
+   "path": "assets/img/opt/ui-map-960.jpg",
+   "slug": "ui-map",
+   "format": "jpg",
+   "width": 960,
+   "height": 415,
+   "bytes": 14513
+  },
+  {
+   "path": "assets/img/opt/ui-plan-480.avif",
+   "slug": "ui-plan",
+   "format": "avif",
+   "width": 480,
+   "height": 300,
+   "bytes": 6525
+  },
+  {
+   "path": "assets/img/opt/ui-plan-480.webp",
+   "slug": "ui-plan",
+   "format": "webp",
+   "width": 480,
+   "height": 300,
+   "bytes": 9064
+  },
+  {
+   "path": "assets/img/opt/ui-plan-960.avif",
+   "slug": "ui-plan",
+   "format": "avif",
+   "width": 960,
+   "height": 600,
+   "bytes": 21545
+  },
+  {
+   "path": "assets/img/opt/ui-plan-960.webp",
+   "slug": "ui-plan",
+   "format": "webp",
+   "width": 960,
+   "height": 600,
+   "bytes": 27930
+  },
+  {
+   "path": "assets/img/opt/ui-plan-960.jpg",
+   "slug": "ui-plan",
+   "format": "jpg",
+   "width": 960,
+   "height": 600,
+   "bytes": 53622
+  },
+  {
+   "path": "assets/img/opt/ui-edit-480.avif",
+   "slug": "ui-edit",
+   "format": "avif",
+   "width": 480,
+   "height": 236,
+   "bytes": 4102
+  },
+  {
+   "path": "assets/img/opt/ui-edit-480.webp",
+   "slug": "ui-edit",
+   "format": "webp",
+   "width": 480,
+   "height": 236,
+   "bytes": 4974
+  },
+  {
+   "path": "assets/img/opt/ui-edit-960.avif",
+   "slug": "ui-edit",
+   "format": "avif",
+   "width": 960,
+   "height": 473,
+   "bytes": 9543
+  },
+  {
+   "path": "assets/img/opt/ui-edit-960.webp",
+   "slug": "ui-edit",
+   "format": "webp",
+   "width": 960,
+   "height": 473,
+   "bytes": 11852
+  },
+  {
+   "path": "assets/img/opt/ui-edit-960.jpg",
+   "slug": "ui-edit",
+   "format": "jpg",
+   "width": 960,
+   "height": 473,
+   "bytes": 28044
+  },
+  {
+   "path": "assets/img/opt/navi-home-480.avif",
+   "slug": "navi-home",
+   "format": "avif",
+   "width": 480,
+   "height": 229,
+   "bytes": 5150
+  },
+  {
+   "path": "assets/img/opt/navi-home-480.webp",
+   "slug": "navi-home",
+   "format": "webp",
+   "width": 480,
+   "height": 229,
+   "bytes": 8304
+  },
+  {
+   "path": "assets/img/opt/navi-home-960.avif",
+   "slug": "navi-home",
+   "format": "avif",
+   "width": 960,
+   "height": 459,
+   "bytes": 14298
+  },
+  {
+   "path": "assets/img/opt/navi-home-960.webp",
+   "slug": "navi-home",
+   "format": "webp",
+   "width": 960,
+   "height": 459,
+   "bytes": 23138
+  },
+  {
+   "path": "assets/img/opt/navi-home-1440.avif",
+   "slug": "navi-home",
+   "format": "avif",
+   "width": 1440,
+   "height": 688,
+   "bytes": 25929
+  },
+  {
+   "path": "assets/img/opt/navi-home-1440.webp",
+   "slug": "navi-home",
+   "format": "webp",
+   "width": 1440,
+   "height": 688,
+   "bytes": 40848
+  },
+  {
+   "path": "assets/img/opt/navi-home-960.jpg",
+   "slug": "navi-home",
+   "format": "jpg",
+   "width": 960,
+   "height": 459,
+   "bytes": 42536
+  },
+  {
+   "path": "assets/img/opt/navi-prep-480.avif",
+   "slug": "navi-prep",
+   "format": "avif",
+   "width": 480,
+   "height": 229,
+   "bytes": 2676
+  },
+  {
+   "path": "assets/img/opt/navi-prep-480.webp",
+   "slug": "navi-prep",
+   "format": "webp",
+   "width": 480,
+   "height": 229,
+   "bytes": 3666
+  },
+  {
+   "path": "assets/img/opt/navi-prep-960.avif",
+   "slug": "navi-prep",
+   "format": "avif",
+   "width": 960,
+   "height": 459,
+   "bytes": 7916
+  },
+  {
+   "path": "assets/img/opt/navi-prep-960.webp",
+   "slug": "navi-prep",
+   "format": "webp",
+   "width": 960,
+   "height": 459,
+   "bytes": 11594
+  },
+  {
+   "path": "assets/img/opt/navi-prep-1440.avif",
+   "slug": "navi-prep",
+   "format": "avif",
+   "width": 1440,
+   "height": 688,
+   "bytes": 16123
+  },
+  {
+   "path": "assets/img/opt/navi-prep-1440.webp",
+   "slug": "navi-prep",
+   "format": "webp",
+   "width": 1440,
+   "height": 688,
+   "bytes": 22394
+  },
+  {
+   "path": "assets/img/opt/navi-prep-960.jpg",
+   "slug": "navi-prep",
+   "format": "jpg",
+   "width": 960,
+   "height": 459,
+   "bytes": 26283
+  },
+  {
+   "path": "assets/img/opt/gc-board-480.avif",
+   "slug": "gc-board",
+   "format": "avif",
+   "width": 480,
+   "height": 229,
+   "bytes": 2960
+  },
+  {
+   "path": "assets/img/opt/gc-board-480.webp",
+   "slug": "gc-board",
+   "format": "webp",
+   "width": 480,
+   "height": 229,
+   "bytes": 3916
+  },
+  {
+   "path": "assets/img/opt/gc-board-960.avif",
+   "slug": "gc-board",
+   "format": "avif",
+   "width": 960,
+   "height": 459,
+   "bytes": 8077
+  },
+  {
+   "path": "assets/img/opt/gc-board-960.webp",
+   "slug": "gc-board",
+   "format": "webp",
+   "width": 960,
+   "height": 459,
+   "bytes": 11484
+  },
+  {
+   "path": "assets/img/opt/gc-board-1440.avif",
+   "slug": "gc-board",
+   "format": "avif",
+   "width": 1440,
+   "height": 688,
+   "bytes": 14752
+  },
+  {
+   "path": "assets/img/opt/gc-board-1440.webp",
+   "slug": "gc-board",
+   "format": "webp",
+   "width": 1440,
+   "height": 688,
+   "bytes": 22280
+  },
+  {
+   "path": "assets/img/opt/gc-board-960.jpg",
+   "slug": "gc-board",
+   "format": "jpg",
+   "width": 960,
+   "height": 459,
+   "bytes": 27197
+  },
+  {
+   "path": "assets/img/opt/gc-dance-480.avif",
+   "slug": "gc-dance",
+   "format": "avif",
+   "width": 480,
+   "height": 230,
+   "bytes": 4060
+  },
+  {
+   "path": "assets/img/opt/gc-dance-480.webp",
+   "slug": "gc-dance",
+   "format": "webp",
+   "width": 480,
+   "height": 230,
+   "bytes": 5554
+  },
+  {
+   "path": "assets/img/opt/gc-dance-960.avif",
+   "slug": "gc-dance",
+   "format": "avif",
+   "width": 960,
+   "height": 460,
+   "bytes": 10715
+  },
+  {
+   "path": "assets/img/opt/gc-dance-960.webp",
+   "slug": "gc-dance",
+   "format": "webp",
+   "width": 960,
+   "height": 460,
+   "bytes": 16422
+  },
+  {
+   "path": "assets/img/opt/gc-dance-1440.avif",
+   "slug": "gc-dance",
+   "format": "avif",
+   "width": 1440,
+   "height": 690,
+   "bytes": 19517
+  },
+  {
+   "path": "assets/img/opt/gc-dance-1440.webp",
+   "slug": "gc-dance",
+   "format": "webp",
+   "width": 1440,
+   "height": 690,
+   "bytes": 30694
+  },
+  {
+   "path": "assets/img/opt/gc-dance-960.jpg",
+   "slug": "gc-dance",
+   "format": "jpg",
+   "width": 960,
+   "height": 460,
+   "bytes": 36100
+  },
+  {
+   "path": "assets/img/opt/gc-keys-476.avif",
+   "slug": "gc-keys",
+   "format": "avif",
+   "width": 476,
+   "height": 750,
+   "bytes": 8189
+  },
+  {
+   "path": "assets/img/opt/gc-keys-476.webp",
+   "slug": "gc-keys",
+   "format": "webp",
+   "width": 476,
+   "height": 750,
+   "bytes": 12602
+  },
+  {
+   "path": "assets/img/opt/gc-keys-960.jpg",
+   "slug": "gc-keys",
+   "format": "jpg",
+   "width": 476,
+   "height": 750,
+   "bytes": 29960
+  },
+  {
+   "path": "assets/img/opt/gc-phone-480.avif",
+   "slug": "gc-phone",
+   "format": "avif",
+   "width": 480,
+   "height": 1042,
+   "bytes": 21594
+  },
+  {
+   "path": "assets/img/opt/gc-phone-480.webp",
+   "slug": "gc-phone",
+   "format": "webp",
+   "width": 480,
+   "height": 1042,
+   "bytes": 33140
+  },
+  {
+   "path": "assets/img/opt/gc-phone-960.avif",
+   "slug": "gc-phone",
+   "format": "avif",
+   "width": 960,
+   "height": 2084,
+   "bytes": 49694
+  },
+  {
+   "path": "assets/img/opt/gc-phone-960.webp",
+   "slug": "gc-phone",
+   "format": "webp",
+   "width": 960,
+   "height": 2084,
+   "bytes": 77688
+  },
+  {
+   "path": "assets/img/opt/gc-phone-960.jpg",
+   "slug": "gc-phone",
+   "format": "jpg",
+   "width": 960,
+   "height": 2084,
+   "bytes": 155485
+  },
+  {
+   "path": "assets/img/opt/gc-queue-329.avif",
+   "slug": "gc-queue",
+   "format": "avif",
+   "width": 329,
+   "height": 436,
+   "bytes": 5059
+  },
+  {
+   "path": "assets/img/opt/gc-queue-329.webp",
+   "slug": "gc-queue",
+   "format": "webp",
+   "width": 329,
+   "height": 436,
+   "bytes": 9480
+  },
+  {
+   "path": "assets/img/opt/gc-queue-960.jpg",
+   "slug": "gc-queue",
+   "format": "jpg",
+   "width": 329,
+   "height": 436,
+   "bytes": 19178
+  }
+ ],
+ "videos": [
+  {
+   "path": "assets/video/opt/tour-walk-720.mp4",
+   "source": "assets/video/tour-walk.mp4",
+   "bytes": 604105,
+   "sourceBytes": 2404862,
+   "settings": "scale=720:-2 fps=30 crf30 preset=slow profile=high yuv420p +faststart -an",
+   "codec": "h264",
+   "width": 720,
+   "height": 1280,
+   "fps": "30/1",
+   "frames": 360,
+   "duration": 12.0
+  },
+  {
+   "path": "assets/video/opt/dance-540.mp4",
+   "source": "assets/video/dance.mp4",
+   "bytes": 377026,
+   "sourceBytes": 1060736,
+   "settings": "scale=540:-2 fps=30 crf32 preset=slow profile=high yuv420p +faststart -an",
+   "codec": "h264",
+   "width": 540,
+   "height": 960,
+   "fps": "30/1",
+   "frames": 239,
+   "duration": 7.966667
+  }
+ ],
+ "posters": [
+  {
+   "path": "assets/img/opt/poster-tour.jpg",
+   "slug": "poster-tour",
+   "format": "jpg",
+   "width": 960,
+   "height": 1706,
+   "bytes": 104787,
+   "role": "poster"
+  },
+  {
+   "path": "assets/img/opt/poster-tour.webp",
+   "slug": "poster-tour",
+   "format": "webp",
+   "width": 960,
+   "height": 1706,
+   "bytes": 41786,
+   "role": "poster"
+  },
+  {
+   "path": "assets/img/opt/poster-tour.avif",
+   "slug": "poster-tour",
+   "format": "avif",
+   "width": 960,
+   "height": 1706,
+   "bytes": 32635,
+   "role": "poster"
+  },
+  {
+   "path": "assets/img/opt/poster-dance.jpg",
+   "slug": "poster-dance",
+   "format": "jpg",
+   "width": 960,
+   "height": 1706,
+   "bytes": 100886,
+   "role": "poster"
+  },
+  {
+   "path": "assets/img/opt/poster-dance.webp",
+   "slug": "poster-dance",
+   "format": "webp",
+   "width": 960,
+   "height": 1706,
+   "bytes": 42678,
+   "role": "poster"
+  },
+  {
+   "path": "assets/img/opt/poster-dance.avif",
+   "slug": "poster-dance",
+   "format": "avif",
+   "width": 960,
+   "height": 1706,
+   "bytes": 30581,
+   "role": "poster"
+  }
+ ],
+ "fonts": {
+  "files": [
+   {
+    "path": "assets/fonts/epilogue-latin.woff2",
+    "bytes": 41672
+   },
+   {
+    "path": "assets/fonts/noto-sans-sc-400.subset.woff2",
+    "bytes": 88248
+   },
+   {
+    "path": "assets/fonts/noto-sans-sc-500.subset.woff2",
+    "bytes": 88504
+   },
+   {
+    "path": "assets/fonts/noto-sans-sc-700.subset.woff2",
+    "bytes": 89540
+   }
+  ],
+  "coversCodepoints": 917
+ }
+}

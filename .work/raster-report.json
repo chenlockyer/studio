@@ -1,0 +1,299 @@
+[
+ {
+  "slug": "contact",
+  "source": "bg-contact.jpg",
+  "src_w": 1600,
+  "src_h": 1482,
+  "src_bytes": 185810,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 209720,
+  "secs": 4.7
+ },
+ {
+  "slug": "course",
+  "source": "bg-course.jpg",
+  "src_w": 1400,
+  "src_h": 1166,
+  "src_bytes": 131468,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 141059,
+  "secs": 2.4
+ },
+ {
+  "slug": "multi",
+  "source": "bg-multi.jpg",
+  "src_w": 1600,
+  "src_h": 1600,
+  "src_bytes": 219933,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 334613,
+  "secs": 5.6
+ },
+ {
+  "slug": "stage",
+  "source": "bg-stage.jpg",
+  "src_w": 1400,
+  "src_h": 1400,
+  "src_bytes": 96237,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 112353,
+  "secs": 2.7
+ },
+ {
+  "slug": "tour",
+  "source": "bg-tour.jpg",
+  "src_w": 1600,
+  "src_h": 1600,
+  "src_bytes": 200305,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 245752,
+  "secs": 4.6
+ },
+ {
+  "slug": "reel1",
+  "source": "reel-1-front.jpg",
+  "src_w": 1080,
+  "src_h": 1350,
+  "src_bytes": 156648,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 251124,
+  "secs": 2.6
+ },
+ {
+  "slug": "reel2",
+  "source": "reel-2-walk.jpg",
+  "src_w": 1080,
+  "src_h": 1350,
+  "src_bytes": 171816,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 248792,
+  "secs": 2.5
+ },
+ {
+  "slug": "reel3",
+  "source": "reel-3-dance.jpg",
+  "src_w": 1080,
+  "src_h": 1350,
+  "src_bytes": 89965,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 150692,
+  "secs": 3.1
+ },
+ {
+  "slug": "reel4",
+  "source": "reel-4-conduct.jpg",
+  "src_w": 1080,
+  "src_h": 1350,
+  "src_bytes": 57500,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 91509,
+  "secs": 2.5
+ },
+ {
+  "slug": "thumb-stage",
+  "source": "thumb-stage.jpg",
+  "src_w": 720,
+  "src_h": 480,
+  "src_bytes": 18451,
+  "ladder": [
+   480
+  ],
+  "avif_q": 52,
+  "out_bytes": 26410,
+  "secs": 0.6
+ },
+ {
+  "slug": "thumb-tour",
+  "source": "thumb-tour-card.jpg",
+  "src_w": 720,
+  "src_h": 488,
+  "src_bytes": 43132,
+  "ladder": [
+   480
+  ],
+  "avif_q": 52,
+  "out_bytes": 42202,
+  "secs": 1.8
+ },
+ {
+  "slug": "ui-map",
+  "source": "ui-1-map.jpg",
+  "src_w": 1200,
+  "src_h": 519,
+  "src_bytes": 27574,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 29876,
+  "secs": 1.0
+ },
+ {
+  "slug": "ui-plan",
+  "source": "ui-2-plan.jpg",
+  "src_w": 1200,
+  "src_h": 750,
+  "src_bytes": 99852,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 118686,
+  "secs": 4.8
+ },
+ {
+  "slug": "ui-edit",
+  "source": "ui-3-edit.jpg",
+  "src_w": 1200,
+  "src_h": 591,
+  "src_bytes": 47195,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 58515,
+  "secs": 1.5
+ },
+ {
+  "slug": "navi-home",
+  "source": "导览主页面.png",
+  "src_w": 1913,
+  "src_h": 914,
+  "src_bytes": 189132,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 160203,
+  "secs": 6.6
+ },
+ {
+  "slug": "navi-prep",
+  "source": "导览-准备页面.png",
+  "src_w": 1915,
+  "src_h": 915,
+  "src_bytes": 72924,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 90652,
+  "secs": 4.6
+ },
+ {
+  "slug": "gc-board",
+  "source": "群控-主页面.png",
+  "src_w": 1914,
+  "src_h": 915,
+  "src_bytes": 116621,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 90666,
+  "secs": 5.5
+ },
+ {
+  "slug": "gc-dance",
+  "source": "群控-官方舞蹈页面.png",
+  "src_w": 1915,
+  "src_h": 917,
+  "src_bytes": 155607,
+  "ladder": [
+   480,
+   960,
+   1440
+  ],
+  "avif_q": 52,
+  "out_bytes": 123062,
+  "secs": 6.0
+ },
+ {
+  "slug": "gc-keys",
+  "source": "群控-自定义按键.png",
+  "src_w": 476,
+  "src_h": 750,
+  "src_bytes": 46492,
+  "ladder": [
+   476
+  ],
+  "avif_q": 52,
+  "out_bytes": 50751,
+  "secs": 1.6
+ },
+ {
+  "slug": "gc-phone",
+  "source": "群控手机端.jpg",
+  "src_w": 1156,
+  "src_h": 2510,
+  "src_bytes": 663323,
+  "ladder": [
+   480,
+   960
+  ],
+  "avif_q": 52,
+  "out_bytes": 337601,
+  "secs": 8.0
+ },
+ {
+  "slug": "gc-queue",
+  "source": "支持自定义舞蹈队列一键下发.png",
+  "src_w": 329,
+  "src_h": 436,
+  "src_bytes": 27305,
+  "ladder": [
+   329
+  ],
+  "avif_q": 52,
+  "out_bytes": 33717,
+  "secs": 1.5
+ }
+]

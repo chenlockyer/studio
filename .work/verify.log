@@ -1,0 +1,22 @@
+=== (a) manifest files exist / non-zero ===
+  entries=123  missing=0  zero=0  size_mismatch=0
+=== (b) AVIF decode check ===
+  avif_files=47  failures=0
+  -- manifest width/height vs decoded --
+  dimension_mismatches=0
+=== (c) video ffprobe ===
+  tour-walk-720.mp4      codec=h264 720x1280 fps=30/1 frames=360 dur=12.000s bytes=604105
+  dance-540.mp4          codec=h264 540x960 fps=30/1 frames=239 dur=7.967s bytes=377026
+=== (d) font subset cmap ===
+  noto-sans-sc-400.subset.woff2    bytes=88248   glyphs=703  min=U+00B7 max=U+FF65 ascii=0 family='Noto Sans SC'
+  noto-sans-sc-500.subset.woff2    bytes=88504   glyphs=703  min=U+00B7 max=U+FF65 ascii=0 family='Noto Sans SC Medium'
+  noto-sans-sc-700.subset.woff2    bytes=89540   glyphs=703  min=U+00B7 max=U+FF65 ascii=0 family='Noto Sans SC'
+  epilogue-latin.woff2             bytes=41672   glyphs=223  min=U+0020 max=U+2212 ascii=95 family='Epilogue'
+=== (e) totals ===
+  raster=2947955  posters=353353  videos=981131  fonts=307964
+  ADDED TOTAL = 4590403 bytes (4.38 MB)
+  img  before=2817290 after=3301308  (2.69 MB -> 3.15 MB)
+  video before=3465598 after=981131 (3.31 MB -> 0.94 MB)
+  fonts after=307964 (300.75 KB)
+
+>>> ALL CHECKS PASSED

@@ -298,6 +298,7 @@ a { color: inherit; text-decoration: none; }
 .media-wide { margin: 0 0 clamp(1.5rem, 3vw, 2.5rem); }
 .media-wide video {
   width: 100%;
+  height: auto;          /* 必须写：<video width height> 属性会把高度钉死，aspect-ratio 就失效了 */
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--panel);
@@ -752,13 +753,24 @@ a { color: inherit; text-decoration: none; }
   body { line-height: 1.68; }
   .wm-sub { display: none; }
 
+  /* 手机上不再把 16:9 画面裁进竖框（横向会被裁掉 72% 且糊）；改成整块 16:9 视频带 + 下方文字 */
   .hero {
-    min-height: 94svh;
-    padding-top: calc(var(--pad) + 4.5rem);
+    min-height: auto;
+    display: block;
+    padding-top: 3.6rem;
     padding-bottom: 2.75rem;
   }
-  .hero-video { object-position: center 26%; }
-  .hero-media { background-position: center 26%; }
+  .hero-media {
+    position: relative;
+    inset: auto;
+    z-index: auto;
+    aspect-ratio: 16 / 9;
+    margin-inline: calc(-1 * var(--pad));
+    background-position: center 42%;
+  }
+  .hero-video { object-position: center 42%; }
+  .hero-scrim { display: none; }
+  .hero-inner { padding-top: 1.35rem; }
   .hero-title { font-size: clamp(1.85rem, 8.6vw, 2.5rem); max-width: none; }
   .hero-sub { font-size: var(--t-base); }
   .hero-act { width: 100%; }
@@ -803,6 +815,7 @@ a { color: inherit; text-decoration: none; }
 .chain-video > video {
   display: block;
   width: 100%;
+  height: auto;          /* 同上 */
   aspect-ratio: 9 / 16;
   object-fit: cover;
   background: var(--panel);

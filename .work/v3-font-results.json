@@ -1,0 +1,34 @@
+[
+ {
+  "label": "中文标题 SmileySans",
+  "file": "smiley-display.woff2",
+  "bytes": 84592,
+  "missing": 3,
+  "missing_cjk": 0,
+  "missing_sample": "\n≤≥"
+ },
+ {
+  "label": "中文正文 Noto 400",
+  "file": "noto-400.woff2",
+  "bytes": 93140,
+  "missing": 1,
+  "missing_cjk": 0,
+  "missing_sample": "\n"
+ },
+ {
+  "label": "中文正文 Noto 700",
+  "file": "noto-700.woff2",
+  "bytes": 94120,
+  "missing": 1,
+  "missing_cjk": 0,
+  "missing_sample": "\n"
+ },
+ {
+  "label": "拉丁 Inter VF",
+  "file": "inter.woff2",
+  "bytes": 78896,
+  "missing": 586,
+  "missing_cjk": 569,
+  "missing_sample": "\n⑩　、。《》【】一丁七万三上下不与专东两个中串临为主久么义之九也买了事二云五交"
+ }
+]

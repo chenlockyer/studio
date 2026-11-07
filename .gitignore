@@ -1,2 +1,24 @@
 preview/
 .taste-skill/
+
+# 构建过程中的中间产物（脚本可复现，不入库）
+.work/cdpprof/
+.work/cdpprof2/
+.work/cdpprof3/
+.work/chromeprof/
+.work/fonts/
+.work/media-v3/
+.work/frames/
+.work/shots/
+.work/probe/
+.work/trial/
+.work/**/*.png
+.work/**/*.avif
+.work/**/*.webp
+.work/**/*.jpg
+
+# 例外：原始界面截图需要存档（客户软件的原始 PNG，不可再生）
+!.work/source-img/
+!.work/source-img/**
+
+# 保留入库：.work/scripts/、.work/*.md、.work/*.txt、.work/*.json

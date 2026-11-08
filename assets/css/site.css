@@ -159,18 +159,6 @@ a { color: inherit; text-decoration: none; }
 .btn-ghost:hover { border-color: var(--ink); background: rgba(255, 255, 255, 0.09); }
 
 /* ================================================================
-   行内文字链接：靠颜色 + 下划线辨认，不用边框和背景
-   ================================================================ */
-.lnk {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color var(--d-hover) linear;
-}
-.lnk-led { color: var(--led); }
-.lnk-led:hover { color: var(--led-hot); }
-
-/* ================================================================
    顶栏
    ================================================================ */
 .bar {
@@ -514,16 +502,6 @@ a { color: inherit; text-decoration: none; }
 .fig-u { font-size: var(--t-md); margin-left: 0.12em; color: var(--paper-soft); }
 .fig-l { font-size: var(--t-sm); line-height: 1.45; color: var(--paper-soft); }
 .fig-note { margin-top: clamp(1.25rem, 2.5vw, 2rem); font-size: var(--t-base); color: var(--paper-soft); }
-/* 交付实绩下方：一处回个人主页的文字链接，纸色底上用深色底纹，不抢数字 */
-.fig-src {
-  margin-top: 0.75rem;
-  max-width: 52ch;
-  font-size: var(--t-sm);
-  line-height: 1.65;
-  color: var(--paper-soft);
-}
-.fig-src .lnk { color: var(--paper-ink); }
-.fig-src .lnk:hover { color: #0a5f8a; }
 
 /* ================================================================
    培训
@@ -653,13 +631,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--soft);
 }
 .foot-k { color: var(--ink); font-weight: 700; }
-/* 页脚收口：开发与维护方，一行，跟在两栏信息之后 */
-.foot-maker {
-  margin-top: clamp(1.75rem, 3.5vw, 2.75rem);
-  font-size: var(--t-sm);
-  line-height: 1.7;
-  color: var(--soft);
-}
 
 /* ================================================================
    动效：只在允许动的时候动；关掉动画时内容完整
